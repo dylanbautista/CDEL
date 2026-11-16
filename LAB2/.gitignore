@@ -54,6 +54,7 @@
 *~
 *example*
 *sopc_*
+*.png
 # *.sdc # I want those timing files
 
 # ignore Quartus II generated folders
@@ -69,3 +70,4 @@ _output_files/
 PLLJ_PLLSPE_INFO.txt
 
 # Other
+!/LAB1/*
