@@ -39,10 +39,12 @@ architecture arch of entry is
     signal keycode : std_logic_vector(3 downto 0);
     signal good, bad1, bad2, bad3, shift : std_logic;
 
-    signal num0, num1, num2, num3, num4, num5, num6, num7 : std_logic_vector (3 downto 0);
+    signal num0, num1, num2, num3, num4, num5, num6, num7 : std_logic_vector (3 downto 0) := "0000";
     --signal HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7 : std_logic_vector (6 downto 0);
 
     signal bad1_led, bad2_led, bad3_led : std_logic_vector(5 downto 0);
+
+    signal hex0q, hex1q, hex2q, hex3q : std_logic_vector(3 downto 0);
 begin
 
     part1_i: part1 port map(
@@ -85,15 +87,30 @@ begin
         HEX7 => HEX7
     );
 
-    num0 <= "0000";
-    num1 <= "0000";
-    num2 <= "0000";
-    num3 <= "0000";
+    num0 <= hex0q;
+    num1 <= hex1q;
+    num2 <= hex2q;
+    num3 <= hex3q;
     num4 <= "0000";
     num5 <= "0000";
     num6 <= "0000";
     num7 <= "0000";
 
+    -- Display D-flip-flops to retain numbers introduced by user
+    process(clk, nrst) -- could this process be sensitive to key, rather than clk?
+    begin
+        if nrst = '0' then
+        elsif rising_edge(clk) then
+            if key = '1' then
+                hex0q <= keycode;
+                hex1q <= hex0q;
+                hex2q <= hex1q;
+                hex3q <= hex2q;
+            end if;
+        end if;
+    end process;
+
+    -- bad/good LED logic
     LED_GREEN <= "111111111" when good = '1' else "000000000";
     bad1_led <= "111111" when bad1 = '1' else "000000";
     bad2_led <= "111111" when bad2 = '1' else "000000";
