@@ -1,0 +1,33 @@
+
+State Machine - |testbench|part2:part2_i|errcnt
+Name errcnt.err3 errcnt.err2 errcnt.err1 errcnt.err0 
+errcnt.err0 0 0 0 0 
+errcnt.err1 0 0 1 1 
+errcnt.err2 0 1 0 1 
+errcnt.err3 1 0 0 1 
+
+State Machine - |testbench|part2:part2_i|seqdet
+Name seqdet.seqko seqdet.seqok seqdet.now4ko seqdet.now4ok seqdet.now3ko seqdet.now3ok seqdet.now2ko seqdet.now2ok seqdet.now1ko seqdet.now1ok seqdet.start seqdet.waiting 
+seqdet.waiting 0 0 0 0 0 0 0 0 0 0 0 0 
+seqdet.start 0 0 0 0 0 0 0 0 0 0 1 1 
+seqdet.now1ok 0 0 0 0 0 0 0 0 0 1 0 1 
+seqdet.now1ko 0 0 0 0 0 0 0 0 1 0 0 1 
+seqdet.now2ok 0 0 0 0 0 0 0 1 0 0 0 1 
+seqdet.now2ko 0 0 0 0 0 0 1 0 0 0 0 1 
+seqdet.now3ok 0 0 0 0 0 1 0 0 0 0 0 1 
+seqdet.now3ko 0 0 0 0 1 0 0 0 0 0 0 1 
+seqdet.now4ok 0 0 0 1 0 0 0 0 0 0 0 1 
+seqdet.now4ko 0 0 1 0 0 0 0 0 0 0 0 1 
+seqdet.seqok 0 1 0 0 0 0 0 0 0 0 0 1 
+seqdet.seqko 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |testbench|part1:part1_i|curr_st
+Name curr_st.check1 curr_st.wait1 curr_st.kra3 curr_st.kra2 curr_st.kra1 curr_st.kra0 curr_st.check0 curr_st.wait0 
+curr_st.wait0 0 0 0 0 0 0 0 0 
+curr_st.check0 0 0 0 0 0 0 1 1 
+curr_st.kra0 0 0 0 0 0 1 0 1 
+curr_st.kra1 0 0 0 0 1 0 0 1 
+curr_st.kra2 0 0 0 1 0 0 0 1 
+curr_st.kra3 0 0 1 0 0 0 0 1 
+curr_st.wait1 0 1 0 0 0 0 0 1 
+curr_st.check1 1 0 0 0 0 0 0 1 

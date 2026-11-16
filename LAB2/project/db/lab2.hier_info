@@ -1,0 +1,84 @@
+|testbench
+dummy <= <GND>
+
+
+|testbench|part1:part1_i
+clk => count4b:counter.clk
+clk => curr_st~1.DATAIN
+clk => keycode[0]~reg0.CLK
+clk => keycode[1]~reg0.CLK
+clk => keycode[2]~reg0.CLK
+clk => keycode[3]~reg0.CLK
+clk => key~reg0.CLK
+clk => colq[0].CLK
+clk => colq[1].CLK
+clk => colq[2].CLK
+clk => colq[3].CLK
+nrst => count4b:counter.nrst
+nrst => colq[0].ACLR
+nrst => colq[1].ACLR
+nrst => colq[2].ACLR
+nrst => colq[3].ACLR
+nrst => curr_st~3.DATAIN
+col[0] => colq[0].DATAIN
+col[1] => colq[1].DATAIN
+col[2] => colq[2].DATAIN
+col[3] => colq[3].DATAIN
+key <= key~reg0.DB_MAX_OUTPUT_PORT_TYPE
+keycode[0] <= keycode[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+keycode[1] <= keycode[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+keycode[2] <= keycode[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+keycode[3] <= keycode[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+row[0] <= row[0].DB_MAX_OUTPUT_PORT_TYPE
+row[1] <= row[1].DB_MAX_OUTPUT_PORT_TYPE
+row[2] <= row[2].DB_MAX_OUTPUT_PORT_TYPE
+row[3] <= row[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testbench|part1:part1_i|count4b:counter
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+nrst => count[0].ACLR
+nrst => count[1].ACLR
+nrst => count[2].ACLR
+nrst => count[3].ACLR
+output[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testbench|part2:part2_i
+clk => good~reg0.CLK
+clk => errcnt~4.DATAIN
+clk => seqdet~13.DATAIN
+nrst => good~reg0.ACLR
+nrst => errcnt~6.DATAIN
+nrst => seqdet~15.DATAIN
+key => bcdind.IN1
+key => astind.IN1
+key => almind.IN1
+keycode[0] => Equal2.IN3
+keycode[0] => Equal0.IN0
+keycode[0] => Equal1.IN3
+keycode[1] => Equal2.IN2
+keycode[1] => bcdind.IN0
+keycode[1] => Equal0.IN3
+keycode[1] => Equal1.IN2
+keycode[2] => Equal2.IN1
+keycode[2] => bcdind.IN1
+keycode[2] => Equal0.IN2
+keycode[2] => Equal1.IN1
+keycode[3] => Equal2.IN0
+keycode[3] => bcdind.IN1
+keycode[3] => Equal0.IN1
+keycode[3] => Equal1.IN0
+good <= good~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bad1 <= bad1.DB_MAX_OUTPUT_PORT_TYPE
+bad2 <= bad2.DB_MAX_OUTPUT_PORT_TYPE
+bad3 <= bad3.DB_MAX_OUTPUT_PORT_TYPE
+shift <= shift.DB_MAX_OUTPUT_PORT_TYPE
+
+

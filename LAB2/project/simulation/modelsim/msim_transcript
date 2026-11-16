@@ -1,0 +1,978 @@
+# do lab2_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity part2
+# -- Compiling architecture arc_part2 of part2
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity part1
+# -- Compiling architecture arc_keypad of part1
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/count4b.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity count4b
+# -- Compiling architecture arc_count4b of count4b
+# 
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity part2
+# -- Compiling architecture arc_part2 of part2
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity part1
+# -- Compiling architecture arc_keypad of part1
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/count4b.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity count4b
+# -- Compiling architecture arc_count4b of count4b
+# 
+vsim -do lab2_run_msim_rtl_vhdl.do -l msim_transcript -i work.testbench
+# vsim -do lab2_run_msim_rtl_vhdl.do -l msim_transcript -i work.testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading work.part1(arc_keypad)
+# Loading work.count4b(arc_count4b)
+# Loading work.part2(arc_part2)
+# do lab2_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity part2
+# -- Compiling architecture arc_part2 of part2
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity part1
+# -- Compiling architecture arc_keypad of part1
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/count4b.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity count4b
+# -- Compiling architecture arc_count4b of count4b
+# 
+add wave -position insertpoint  \
+sim:/testbench/part1_i/clk
+add wave -position insertpoint  \
+sim:/testbench/part1_i/nrst
+add wave -position insertpoint  \
+sim:/testbench/part1_i/col
+add wave -position insertpoint  \
+sim:/testbench/part1_i/key
+add wave -position insertpoint  \
+sim:/testbench/part1_i/keycode
+add wave -position insertpoint  \
+sim:/testbench/part1_i/curr_st
+run 10us
+add wave -position insertpoint  \
+sim:/testbench/part1_i/row
+restart -f
+# Loading work.testbench(arch)
+# Loading work.part1(arc_keypad)
+# Loading work.count4b(arc_count4b)
+# Loading work.part2(arc_part2)
+run 10us
+add wave -position insertpoint  \
+sim:/testbench/part1_i/colq
+restart -f
+run 10us
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity part2
+# -- Compiling architecture arc_part2 of part2
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity part1
+# -- Compiling architecture arc_keypad of part1
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/count4b.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity count4b
+# -- Compiling architecture arc_count4b of count4b
+# 
+restart -f
+# Loading work.testbench(arch)
+# Loading work.part1(arc_keypad)
+# Loading work.count4b(arc_count4b)
+# Loading work.part2(arc_part2)
+run 10us
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity part2
+# -- Compiling architecture arc_part2 of part2
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity part1
+# -- Compiling architecture arc_keypad of part1
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd(40): Type error resolving prefix expression "not" as type std.STANDARD.BOOLEAN.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd(119): VHDL Compiler exiting
+# ** Error: /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./lab2_run_msim_rtl_vhdl.do line 10
+# /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd}"
+restart -f
+# Loading work.testbench(arch)
+# ** Error: (vsim-3173) Entity '/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/project/simulation/modelsim/rtl_work.part1' has no architecture.
+# Load interrupted
+run 10us
+# No Design Loaded!
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity part2
+# -- Compiling architecture arc_part2 of part2
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity part1
+# -- Compiling architecture arc_keypad of part1
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd(40): Type error resolving prefix expression "not" as type std.STANDARD.BOOLEAN.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd(119): VHDL Compiler exiting
+# ** Error: /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./lab2_run_msim_rtl_vhdl.do line 10
+# /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd}"
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity part2
+# -- Compiling architecture arc_part2 of part2
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity part1
+# -- Compiling architecture arc_keypad of part1
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/count4b.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity count4b
+# -- Compiling architecture arc_count4b of count4b
+# 
+vsim -voptargs=+acc work.testbench
+# vsim -voptargs=+acc work.testbench 
+# Error loading design
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity part2
+# -- Compiling architecture arc_part2 of part2
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity part1
+# -- Compiling architecture arc_keypad of part1
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/count4b.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity count4b
+# -- Compiling architecture arc_count4b of count4b
+# 
+vsim -voptargs=+acc work.testbench
+# vsim -voptargs=+acc work.testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading work.part1(arc_keypad)
+# Loading work.count4b(arc_count4b)
+# Loading work.part2(arc_part2)
+add wave -position insertpoint  \
+sim:/testbench/clk
+add wave -position insertpoint  \
+sim:/testbench/col
+add wave -position insertpoint  \
+sim:/testbench/row
+add wave -position insertpoint  \
+sim:/testbench/part1_i/colq
+add wave -position insertpoint  \
+sim:/testbench/part1_i/key
+add wave -position insertpoint  \
+sim:/testbench/part1_i/curr_st
+run 10us
+do /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/project/simulation/modelsim/part12_wave.do
+restart -f
+run 10us
+run 1000us
+add wave -position insertpoint  \
+sim:/testbench/pressed
+do /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/project/simulation/modelsim/part12_wave.do
+do /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/project/simulation/modelsim/part12_wave.do
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity part2
+# -- Compiling architecture arc_part2 of part2
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity part1
+# -- Compiling architecture arc_keypad of part1
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/count4b.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity count4b
+# -- Compiling architecture arc_count4b of count4b
+# 
+restart -f
+# Loading work.testbench(arch)
+# Loading work.part1(arc_keypad)
+# Loading work.count4b(arc_count4b)
+# Loading work.part2(arc_part2)
+run 1000us
+add wave -position insertpoint  \
+sim:/testbench/pressed
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity part2
+# -- Compiling architecture arc_part2 of part2
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity part1
+# -- Compiling architecture arc_keypad of part1
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/count4b.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity count4b
+# -- Compiling architecture arc_count4b of count4b
+# 
+restart -f
+# Loading work.testbench(arch)
+# Loading work.part1(arc_keypad)
+# Loading work.count4b(arc_count4b)
+# Loading work.part2(arc_part2)
+run 1000us
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity part2
+# -- Compiling architecture arc_part2 of part2
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity part1
+# -- Compiling architecture arc_keypad of part1
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/count4b.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity count4b
+# -- Compiling architecture arc_count4b of count4b
+# 
+restart -f
+# Loading work.testbench(arch)
+# Loading work.part1(arc_keypad)
+# Loading work.count4b(arc_count4b)
+# Loading work.part2(arc_part2)
+run 1000us
+add wave -position insertpoint  \
+sim:/testbench/part2_i/errcnt
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(41): near ",": expecting ';' or ')'
+# ** Error: /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./lab2_run_msim_rtl_vhdl.do line 8
+# /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}"
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(44): Target of signal assignment is not a signal.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(45): near "delay": expecting ';'
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(56): near ")": expecting STRING or IDENTIFIER or ALL or <<
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(38): (vcom-1192) Array length is 12; aggregate length is 11.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(59): VHDL Compiler exiting
+# ** Error: /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./lab2_run_msim_rtl_vhdl.do line 8
+# /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}"
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(45): near "delay": expecting ';'
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(56): near ")": expecting STRING or IDENTIFIER or ALL or <<
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(38): (vcom-1192) Array length is 12; aggregate length is 11.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(59): VHDL Compiler exiting
+# ** Error: /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./lab2_run_msim_rtl_vhdl.do line 8
+# /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}"
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(45): near "delay": expecting ';'
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(56): near ")": expecting STRING or IDENTIFIER or ALL or <<
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(38): (vcom-1192) Array length is 12; aggregate length is 11.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(59): VHDL Compiler exiting
+# ** Error: /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./lab2_run_msim_rtl_vhdl.do line 8
+# /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}"
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(45): near "delay": expecting ';'
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(58): (vcom-1451) Actual (integer literal "11") for formal "n" is not signal name.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(58): (vcom-1030) Subprogram "linear_stimulator" signal formal "x" bounds do not match those of actual.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(59): near ";": expecting PROCESS
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(74): Illegal sequential statement.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(156): VHDL Compiler exiting
+# ** Error: /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./lab2_run_msim_rtl_vhdl.do line 8
+# /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}"
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(45): near "delay": expecting ';'
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(58): (vcom-1030) Subprogram "linear_stimulator" signal formal "x" bounds do not match those of actual.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(59): near ";": expecting PROCESS
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(74): Illegal sequential statement.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(156): VHDL Compiler exiting
+# ** Error: /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./lab2_run_msim_rtl_vhdl.do line 8
+# /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}"
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(45): near "delay": expecting ';'
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(58): (vcom-1030) Subprogram "linear_stimulator" signal formal "x" bounds do not match those of actual.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(59): near ";": expecting PROCESS
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(74): Illegal sequential statement.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(38): Variable declaration 'arr' not allowed in this region.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(156): VHDL Compiler exiting
+# ** Error: /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./lab2_run_msim_rtl_vhdl.do line 8
+# /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}"
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(45): near "ns": expecting ';'
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(58): (vcom-1030) Subprogram "linear_stimulator" signal formal "x" bounds do not match those of actual.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(59): near ";": expecting PROCESS
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(74): Illegal sequential statement.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(38): Variable declaration 'arr' not allowed in this region.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(156): VHDL Compiler exiting
+# ** Error: /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./lab2_run_msim_rtl_vhdl.do line 8
+# /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}"
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(58): (vcom-1030) Subprogram "linear_stimulator" signal formal "x" bounds do not match those of actual.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(59): near ";": expecting PROCESS
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(74): Illegal sequential statement.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(38): Variable declaration 'arr' not allowed in this region.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(156): VHDL Compiler exiting
+# ** Error: /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./lab2_run_msim_rtl_vhdl.do line 8
+# /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}"
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(59): near ";": expecting PROCESS
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(74): Illegal sequential statement.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(38): Variable declaration 'arr' not allowed in this region.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(156): VHDL Compiler exiting
+# ** Error: /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./lab2_run_msim_rtl_vhdl.do line 8
+# /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}"
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(56): near ")": expecting STRING or IDENTIFIER or ALL or <<
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(38): Variable declaration 'arr' not allowed in this region.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(59): VHDL Compiler exiting
+# ** Error: /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./lab2_run_msim_rtl_vhdl.do line 8
+# /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}"
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(59): near ";": expecting PROCESS
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(74): Illegal sequential statement.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(38): Variable declaration 'arr' not allowed in this region.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(156): VHDL Compiler exiting
+# ** Error: /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./lab2_run_msim_rtl_vhdl.do line 8
+# /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}"
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(38): Variable declaration 'arr' not allowed in this region.
+# ** Error: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd(156): VHDL Compiler exiting
+# ** Error: /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./lab2_run_msim_rtl_vhdl.do line 8
+# /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}"
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity part2
+# -- Compiling architecture arc_part2 of part2
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity part1
+# -- Compiling architecture arc_keypad of part1
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/count4b.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity count4b
+# -- Compiling architecture arc_count4b of count4b
+# 
+restart -f
+# Loading work.testbench(arch)
+# Loading work.part1(arc_keypad)
+# Loading work.count4b(arc_count4b)
+# Loading work.part2(arc_part2)
+run 1000us
+# ** Fatal: (vsim-3734) Index value 11 is out of range 10 downto 0.
+#    Time: 45100 ns  Iteration: 0  Process: /testbench/stimulator File: /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd
+# Fatal error in Process stimulator at /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd line 42
+# 
+# HDL call sequence:
+# Stopped at /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd 42 ForLoop loop
+# called from  /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd 57 Process stimulator
+# 
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity part2
+# -- Compiling architecture arc_part2 of part2
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity part1
+# -- Compiling architecture arc_keypad of part1
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/count4b.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity count4b
+# -- Compiling architecture arc_count4b of count4b
+# 
+restart -f
+# Loading work.testbench(arch)
+# Loading work.part1(arc_keypad)
+# Loading work.count4b(arc_count4b)
+# Loading work.part2(arc_part2)
+run 1000us
+add wave -position insertpoint  \
+sim:/testbench/part2_i/astind
+restart -f
+run 1000us
+do lab2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity part2
+# -- Compiling architecture arc_part2 of part2
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity part1
+# -- Compiling architecture arc_keypad of part1
+# vcom -93 -work work {/Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/count4b.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity count4b
+# -- Compiling architecture arc_count4b of count4b
+# 
+restart -f
+# Loading work.testbench(arch)
+# Loading work.part1(arc_keypad)
+# Loading work.count4b(arc_count4b)
+# Loading work.part2(arc_part2)
+run 1000us
