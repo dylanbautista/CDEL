@@ -22,7 +22,7 @@ architecture arch of entry is
     component part2
         port ( clk, nrst, key          : in  std_logic;
             keycode                 : in  std_logic_vector(3 downto 0);
-            good, bad1, bad2, bad3  : out std_logic;
+            good, bad1, bad2, bad3, lock  : out std_logic;
             shift                   : out std_logic );
     end component;
 
@@ -30,12 +30,31 @@ architecture arch of entry is
         port ( num0, num1, num2, num3, num4, num5, num6, num7 : in std_logic_vector (3 downto 0);
          HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7 : out std_logic_vector (6 downto 0));
     end component;
+    
+    component opt1_counter 
+		generic
+		(
+			MIN_COUNT : natural := 0;
+			MAX_COUNT : natural := 195999
+		);
+		port
+		(
+			clk		  : in  std_logic;
+			nrst	  : in  std_logic; 
+			lock	  : in  std_logic;
+			ce		  : out std_logic  
+		);
+	end component;
+
 
     signal col, row : std_logic_vector(3 downto 0);
     signal pressed : integer; --range 0 to 16;
 
     --signal clk : std_logic := '0';
     signal key : std_logic := '0';
+    signal lock : std_logic;
+    signal blink : std_logic;
+    signal ce : std_logic;
     signal keycode : std_logic_vector(3 downto 0);
     signal good, bad1, bad2, bad3, shift : std_logic;
 
@@ -65,9 +84,17 @@ begin
         bad1 => bad1,
         bad2 => bad2,
         bad3 => bad3,
+        lock => lock,
         shift => shift
     );
-
+    
+    opt1_counter_i: opt1_counter port map(
+        clk => clk,
+        nrst => nrst,
+        lock => lock,
+        ce => ce
+	);
+	
     hex_dsps_i: hex_disps port map(
         num0 => num0, 
         num1 => num1, 
@@ -109,12 +136,28 @@ begin
             end if;
         end if;
     end process;
+    
+	process(clk, nrst)
+	begin
+		if nrst = '0' then
+			blink <= '0';
+		elsif rising_edge(clk) then
+			if lock = '0' then
+				blink <= '0';
+			elsif ce = '1' then
+				blink <= not blink; 
+			end if;
+		end if;
+	end process;
 
     -- bad/good LED logic
     LED_GREEN <= "111111111" when good = '1' else "000000000";
     bad1_led <= "111111" when bad1 = '1' else "000000";
     bad2_led <= "111111" when bad2 = '1' else "000000";
     bad3_led <= "111111" when bad3 = '1' else "000000";
-    LED_RED <= bad1_led & bad2_led & bad3_led;
+    --LED_RED <= bad1_led & bad2_led & bad3_led;
+	LED_RED <= bad1_led & bad2_led & bad3_led when lock = '0' else
+           "111111111111111111" when blink = '1' else
+           "000000000000000000";
 
 end arch;

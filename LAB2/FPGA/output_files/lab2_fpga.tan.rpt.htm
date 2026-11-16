@@ -1,0 +1,3149 @@
+<HTML>
+
+<HEAD>
+<TITLE>Classic Timing Analyzer report for lab2_fpga</TITLE>
+</HEAD>
+
+<BODY>
+
+<A NAME="top"></A>
+
+<CENTER>
+<H1>Classic Timing Analyzer report for lab2_fpga</H1>
+<H3>Mon Nov 16 19:23:53 2026<BR>
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition</H3>
+</CENTER>
+
+<P><HR></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Table of Contents</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<OL>
+<LI><A HREF="#1">Legal Notice</A></LI>
+<LI><A HREF="#2">Timing Analyzer Summary</A></LI>
+<LI><A HREF="#3">Timing Analyzer Settings</A></LI>
+<LI><A HREF="#4">Clock Settings Summary</A></LI>
+<LI><A HREF="#5">Parallel Compilation</A></LI>
+<LI><A HREF="#6">Clock Setup: 'OSC_50'</A></LI>
+<LI><A HREF="#7">tsu</A></LI>
+<LI><A HREF="#8">tco</A></LI>
+<LI><A HREF="#9">th</A></LI>
+<LI><A HREF="#10">Timing Analyzer Messages</A></LI>
+</OL>
+
+<P><A NAME="1"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Legal Notice</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<PRE>Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+</PRE>
+
+<P><A NAME="2"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Timing Analyzer Summary</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Type</TH>
+<TH>Slack</TH>
+<TH>Required Time</TH>
+<TH>Actual Time</TH>
+<TH>From</TH>
+<TH>To</TH>
+<TH>From Clock</TH>
+<TH>To Clock</TH>
+<TH>Failed Paths</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Worst-case tsu</TD>
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.394 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">--</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Worst-case tco</TD>
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">10.813 ns</TD>
+<TD ALIGN="LEFT">entry:inst|hex0q[0]</TD>
+<TD ALIGN="LEFT">HEX0[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">--</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Worst-case th</TD>
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.509 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">entry:inst|hex3q[0]</TD>
+<TD ALIGN="LEFT">--</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Clock Setup: 'OSC_50'</TD>
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">304.23 MHz ( period = 3.287 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Total number of failed paths</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">0</TD>
+</TR>
+</TABLE>
+<P><A NAME="3"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Timing Analyzer Settings</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Option</TH>
+<TH>Setting</TH>
+<TH>From</TH>
+<TH>To</TH>
+<TH>Entity Name</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Device Name</TD>
+<TD ALIGN="LEFT">EP2C35F672C6</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Timing Models</TD>
+<TD ALIGN="LEFT">Final</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Default hold multicycle</TD>
+<TD ALIGN="LEFT">Same as Multicycle</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Cut paths between unrelated clock domains</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Cut off read during write signal paths</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Cut off feedback from I/O pins</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Report Combined Fast/Slow Timing</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Ignore Clock Settings</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Analyze latches as synchronous elements</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Enable Recovery/Removal analysis</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Enable Clock Latency</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Use TimeQuest Timing Analyzer</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Minimum Core Junction Temperature</TD>
+<TD ALIGN="LEFT">0</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Maximum Core Junction Temperature</TD>
+<TD ALIGN="LEFT">85</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Number of source nodes to report per destination node</TD>
+<TD ALIGN="LEFT">10</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Number of destination nodes to report</TD>
+<TD ALIGN="LEFT">10</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Number of paths to report</TD>
+<TD ALIGN="LEFT">200</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Report Minimum Timing Checks</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Use Fast Timing Models</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Report IO Paths Separately</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Perform Multicorner Analysis</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Reports the worst-case path for each clock domain and analysis</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Reports worst-case timing paths for each clock domain and analysis</TD>
+<TD ALIGN="LEFT">On</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis</TD>
+<TD ALIGN="LEFT">100</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Removes common clock path pessimism (CCPP) during slack computation</TD>
+<TD ALIGN="LEFT">Off</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Output I/O Timing Endpoint</TD>
+<TD ALIGN="LEFT">Near End</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+</TABLE>
+<P><A NAME="4"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Clock Settings Summary</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Clock Node Name</TH>
+<TH>Clock Setting Name</TH>
+<TH>Type</TH>
+<TH>Fmax Requirement</TH>
+<TH>Early Latency</TH>
+<TH>Late Latency</TH>
+<TH>Based on</TH>
+<TH>Multiply Base Fmax by</TH>
+<TH>Divide Base Fmax by</TH>
+<TH>Offset</TH>
+<TH>Phase offset</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">User Pin</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.000 ns</TD>
+<TD ALIGN="LEFT">0.000 ns</TD>
+<TD ALIGN="LEFT">--</TD>
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+</TABLE>
+<P><A NAME="5"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Parallel Compilation</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.<br>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Processors</TH>
+<TH>Number</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Number detected on machine</TD>
+<TD ALIGN="LEFT">20</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">Maximum allowed</TD>
+<TD ALIGN="LEFT">1</TD>
+</TR>
+</TABLE>
+<P><A NAME="6"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Clock Setup: 'OSC_50'</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Slack</TH>
+<TH>Actual fmax (period)</TH>
+<TH>From</TH>
+<TH>To</TH>
+<TH>From Clock</TH>
+<TH>To Clock</TH>
+<TH>Required Setup Relationship</TH>
+<TH>Required Longest P2P Time</TH>
+<TH>Actual Longest P2P Time</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">304.23 MHz ( period = 3.287 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.269 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">309.98 MHz ( period = 3.226 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[1]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.208 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">316.86 MHz ( period = 3.156 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[2]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.138 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">320.51 MHz ( period = 3.120 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[3]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.102 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">331.79 MHz ( period = 3.014 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[4]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.996 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">335.68 MHz ( period = 2.979 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[5]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.961 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">343.88 MHz ( period = 2.908 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[6]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.890 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">356.51 MHz ( period = 2.805 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[7]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.787 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">373.55 MHz ( period = 2.677 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[8]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.659 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">388.95 MHz ( period = 2.571 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[9]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.553 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">394.48 MHz ( period = 2.535 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[10]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.517 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">411.69 MHz ( period = 2.429 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[11]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.411 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">414.59 MHz ( period = 2.412 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[14]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.198 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">417.89 MHz ( period = 2.393 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[12]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.375 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[1]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[14]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.137 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[13]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.127 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[13]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.269 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[2]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[14]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.067 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[1]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[13]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.066 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[12]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.056 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[3]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[14]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.031 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[14]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.198 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check0</TD>
+<TD ALIGN="LEFT">entry:inst|hex0q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.001 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check0</TD>
+<TD ALIGN="LEFT">entry:inst|hex1q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.001 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check0</TD>
+<TD ALIGN="LEFT">entry:inst|hex2q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.001 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check0</TD>
+<TD ALIGN="LEFT">entry:inst|hex3q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">2.001 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[2]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[13]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.996 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[1]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[12]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.995 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[11]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.985 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[3]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[13]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.960 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[4]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[14]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.925 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[2]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[12]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.925 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[1]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[11]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.924 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[10]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.914 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check1</TD>
+<TD ALIGN="LEFT">entry:inst|hex0q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.908 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check1</TD>
+<TD ALIGN="LEFT">entry:inst|hex1q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.908 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check1</TD>
+<TD ALIGN="LEFT">entry:inst|hex2q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.908 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check1</TD>
+<TD ALIGN="LEFT">entry:inst|hex3q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.908 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[5]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[14]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.890 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[3]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[12]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.889 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[4]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[13]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.854 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[2]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[11]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.854 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[1]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[10]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.853 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[9]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.843 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[6]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[14]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.819 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[5]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[13]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.819 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[3]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[11]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.818 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[4]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[12]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.783 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[2]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[10]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.783 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[1]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[9]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.782 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait1</TD>
+<TD ALIGN="LEFT">entry:inst|hex0q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.782 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait1</TD>
+<TD ALIGN="LEFT">entry:inst|hex1q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.782 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait1</TD>
+<TD ALIGN="LEFT">entry:inst|hex2q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.782 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait1</TD>
+<TD ALIGN="LEFT">entry:inst|hex3q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.782 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[8]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.772 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[6]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[13]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.748 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[5]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[12]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.748 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[3]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[10]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.747 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[7]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[14]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.716 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[4]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[11]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.712 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[2]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[9]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.712 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[1]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[8]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.711 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[6]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[12]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.677 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[5]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[11]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.677 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[3]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[9]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.676 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[3]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait1</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.657 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[7]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[13]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.645 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[4]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[10]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.641 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[2]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[8]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.641 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait0</TD>
+<TD ALIGN="LEFT">entry:inst|hex0q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.640 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait0</TD>
+<TD ALIGN="LEFT">entry:inst|hex1q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.640 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait0</TD>
+<TD ALIGN="LEFT">entry:inst|hex2q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.640 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait0</TD>
+<TD ALIGN="LEFT">entry:inst|hex3q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.640 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[2]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait1</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.628 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[7]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.613 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[6]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[11]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.606 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[5]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[10]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.606 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[3]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[8]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.605 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[8]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[14]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.588 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[7]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[12]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.574 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[4]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[9]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.570 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[3]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait0</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.555 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[1]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[7]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.552 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[6]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.542 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[6]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[10]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.535 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[5]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[9]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.535 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[2]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait0</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.526 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[8]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[13]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.517 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[1]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait1</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.511 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[7]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[11]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.503 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[4]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[8]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.499 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[9]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[14]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.482 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[2]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[7]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.482 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[1]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[6]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.481 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[5]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.471 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[6]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[9]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.464 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[5]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[8]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.464 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait1</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait1</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.456 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[10]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[14]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.446 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[8]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[12]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.446 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[3]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[7]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.446 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[7]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[10]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.432 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[9]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[13]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.411 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[2]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[6]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.411 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[1]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[5]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.410 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check1</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait1</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.410 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[1]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait0</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.409 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[4]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.400 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[0]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait1</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.394 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[6]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[8]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.393 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[10]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[13]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.375 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[8]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[11]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.375 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[3]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[6]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.375 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[7]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[9]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.361 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[11]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[14]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.340 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[9]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[12]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.340 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[4]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[7]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.340 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[2]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[5]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.340 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[1]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[4]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.339 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[3]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.329 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[5]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[7]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.305 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[12]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[14]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.304 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[10]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[12]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.304 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[8]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[10]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.304 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[3]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[5]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.304 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[0]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait0</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.292 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[7]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[8]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.290 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[11]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[13]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.269 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[9]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[11]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.269 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[4]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[6]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.269 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[2]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[4]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.269 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[1]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[3]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.268 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[2]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.258 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[3]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check1</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.248 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[3]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check0</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.241 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[6]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[7]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.234 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[5]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[6]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.234 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[12]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[13]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.233 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[10]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[11]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.233 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[8]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[9]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.233 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[3]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[4]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.233 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[2]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check1</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.219 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[2]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check0</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.212 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait0</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait1</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.199 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[13]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[14]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.198 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[11]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[12]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.198 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[9]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[10]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.198 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[4]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[5]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.198 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[2]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[3]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.198 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[1]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[2]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.197 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check0</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait0</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.191 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[1]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.187 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait0</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check0</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.184 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[1]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check1</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.102 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check1</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait0</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.098 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[1]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check0</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.095 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait1</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check1</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.011 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[1]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[3]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.006 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.kra0</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait0</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">1.004 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[0]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check1</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.985 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[0]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check0</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.978 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait1</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait0</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.972 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.kra0</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check1</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.956 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.kra0</TD>
+<TD ALIGN="LEFT">entry:inst|hex0q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.872 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check0</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.kra0</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.871 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check0</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait1</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.866 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[6]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[6]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.848 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[5]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[5]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.848 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[12]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[12]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.847 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[10]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[10]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.847 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[8]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[8]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.847 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[3]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[3]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.847 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[0]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[2]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.834 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[0]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[3]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.831 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.kra0</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait1</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.821 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[14]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[14]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.815 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[13]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[13]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.815 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[11]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[11]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.815 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[9]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[9]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.815 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[7]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[7]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.815 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[4]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[4]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.815 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[2]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[2]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.815 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[1]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[1]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.814 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.804 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[1]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[2]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.698 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[0]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[1]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.559 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|hex1q[0]</TD>
+<TD ALIGN="LEFT">entry:inst|hex2q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.553 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[2]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[3]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.551 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|hex0q[0]</TD>
+<TD ALIGN="LEFT">entry:inst|hex1q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.549 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.547 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|hex2q[0]</TD>
+<TD ALIGN="LEFT">entry:inst|hex3q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.539 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait0</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.wait0</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.407 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check1</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|curr_st.check1</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.407 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[3]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[3]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.407 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[2]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[2]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.407 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[1]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[1]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.407 ns</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">Restricted to 420.17 MHz ( period = 2.380 ns )</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[0]</TD>
+<TD ALIGN="LEFT">entry:inst|part1:part1_i|count4b:counter|count[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">0.407 ns</TD>
+</TR>
+</TABLE>
+<P><A NAME="7"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>tsu</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Slack</TH>
+<TH>Required tsu</TH>
+<TH>Actual tsu</TH>
+<TH>From</TH>
+<TH>To</TH>
+<TH>To Clock</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">6.394 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.590 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[14]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.590 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[13]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.590 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[12]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.590 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[11]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.590 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[10]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.590 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[9]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.590 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[8]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.590 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[7]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.590 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[6]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.590 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[5]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.590 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[4]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.590 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[3]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.590 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[2]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.590 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[1]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">5.590 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.739 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">entry:inst|hex0q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.739 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">entry:inst|hex1q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.739 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">entry:inst|hex2q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">3.739 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">entry:inst|hex3q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+</TABLE>
+<P><A NAME="8"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>tco</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Slack</TH>
+<TH>Required tco</TH>
+<TH>Actual tco</TH>
+<TH>From</TH>
+<TH>To</TH>
+<TH>From Clock</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">10.813 ns</TD>
+<TD ALIGN="LEFT">entry:inst|hex0q[0]</TD>
+<TD ALIGN="LEFT">HEX0[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">10.569 ns</TD>
+<TD ALIGN="LEFT">entry:inst|hex0q[0]</TD>
+<TD ALIGN="LEFT">HEX0[3]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">10.569 ns</TD>
+<TD ALIGN="LEFT">entry:inst|hex0q[0]</TD>
+<TD ALIGN="LEFT">HEX0[4]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">10.559 ns</TD>
+<TD ALIGN="LEFT">entry:inst|hex0q[0]</TD>
+<TD ALIGN="LEFT">HEX0[5]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">8.206 ns</TD>
+<TD ALIGN="LEFT">entry:inst|hex1q[0]</TD>
+<TD ALIGN="LEFT">HEX1[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">8.049 ns</TD>
+<TD ALIGN="LEFT">entry:inst|hex3q[0]</TD>
+<TD ALIGN="LEFT">HEX3[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">8.045 ns</TD>
+<TD ALIGN="LEFT">entry:inst|hex1q[0]</TD>
+<TD ALIGN="LEFT">HEX1[4]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">8.027 ns</TD>
+<TD ALIGN="LEFT">entry:inst|hex3q[0]</TD>
+<TD ALIGN="LEFT">HEX3[3]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">8.027 ns</TD>
+<TD ALIGN="LEFT">entry:inst|hex3q[0]</TD>
+<TD ALIGN="LEFT">HEX3[4]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">8.025 ns</TD>
+<TD ALIGN="LEFT">entry:inst|hex1q[0]</TD>
+<TD ALIGN="LEFT">HEX1[3]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">8.019 ns</TD>
+<TD ALIGN="LEFT">entry:inst|hex2q[0]</TD>
+<TD ALIGN="LEFT">HEX2[4]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">8.019 ns</TD>
+<TD ALIGN="LEFT">entry:inst|hex2q[0]</TD>
+<TD ALIGN="LEFT">HEX2[5]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">8.003 ns</TD>
+<TD ALIGN="LEFT">entry:inst|hex3q[0]</TD>
+<TD ALIGN="LEFT">HEX3[5]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">7.925 ns</TD>
+<TD ALIGN="LEFT">entry:inst|hex2q[0]</TD>
+<TD ALIGN="LEFT">HEX2[3]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">7.780 ns</TD>
+<TD ALIGN="LEFT">entry:inst|hex2q[0]</TD>
+<TD ALIGN="LEFT">HEX2[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">7.752 ns</TD>
+<TD ALIGN="LEFT">entry:inst|hex1q[0]</TD>
+<TD ALIGN="LEFT">HEX1[5]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+</TABLE>
+<P><A NAME="9"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>th</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<TABLE BORDER="1" cellspacing="1" cellpadding="2">
+<TR valign="middle" bgcolor="#C0C0C0">
+<TH>Minimum Slack</TH>
+<TH>Required th</TH>
+<TH>Actual th</TH>
+<TH>From</TH>
+<TH>To</TH>
+<TH>To Clock</TH>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.509 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">entry:inst|hex0q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.509 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">entry:inst|hex1q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.509 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">entry:inst|hex2q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-3.509 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">entry:inst|hex3q[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-5.360 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[14]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-5.360 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[13]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-5.360 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[12]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-5.360 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[11]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-5.360 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[10]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-5.360 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[9]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-5.360 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[8]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-5.360 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[7]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-5.360 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[6]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-5.360 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[5]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-5.360 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[4]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-5.360 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[3]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-5.360 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[2]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-5.360 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[1]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-5.360 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[0]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+<TR valign="middle">
+<TD ALIGN="LEFT">N/A</TD>
+<TD ALIGN="LEFT">None</TD>
+<TD ALIGN="LEFT">-6.164 ns</TD>
+<TD ALIGN="LEFT">key[0]</TD>
+<TD ALIGN="LEFT">count16bits:inst2|cnt[15]</TD>
+<TD ALIGN="LEFT">OSC_50</TD>
+</TR>
+</TABLE>
+<P><A NAME="10"><HR></A></P>
+<TABLE WIDTH="100%" BORDER="0"><TR VALIGN="TOP">
+<TD><H2>Timing Analyzer Messages</H2></TD>
+<TD ALIGN="RIGHT"><A HREF="#top">Top</a></TD></TR></TABLE>
+<PRE>
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Mon Nov 16 19:23:53 2026
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off lab2_fpga -c lab2_fpga --timing_analysis_only
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "OSC_50" is an undefined clock
+Warning: Found 1 node(s) in clock paths which may be acting as ripple and/or gated clocks -- node(s) analyzed as buffer(s) resulting in clock skew
+    Info: Detected ripple clock "count16bits:inst2|cnt[15]" as buffer
+Info: Clock "OSC_50" has Internal fmax of 304.23 MHz between source register "count16bits:inst2|cnt[0]" and destination register "count16bits:inst2|cnt[15]" (period= 3.287 ns)
+    Info: + Longest register to register delay is 2.269 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X1_Y18_N1; Fanout = 2; REG Node = 'count16bits:inst2|cnt[0]'
+        Info: 2: + IC(0.300 ns) + CELL(0.393 ns) = 0.693 ns; Loc. = LCCOMB_X1_Y18_N0; Fanout = 2; COMB Node = 'count16bits:inst2|cnt[0]~17'
+        Info: 3: + IC(0.000 ns) + CELL(0.071 ns) = 0.764 ns; Loc. = LCCOMB_X1_Y18_N2; Fanout = 2; COMB Node = 'count16bits:inst2|cnt[1]~19'
+        Info: 4: + IC(0.000 ns) + CELL(0.071 ns) = 0.835 ns; Loc. = LCCOMB_X1_Y18_N4; Fanout = 2; COMB Node = 'count16bits:inst2|cnt[2]~21'
+        Info: 5: + IC(0.000 ns) + CELL(0.071 ns) = 0.906 ns; Loc. = LCCOMB_X1_Y18_N6; Fanout = 2; COMB Node = 'count16bits:inst2|cnt[3]~23'
+        Info: 6: + IC(0.000 ns) + CELL(0.071 ns) = 0.977 ns; Loc. = LCCOMB_X1_Y18_N8; Fanout = 2; COMB Node = 'count16bits:inst2|cnt[4]~25'
+        Info: 7: + IC(0.000 ns) + CELL(0.071 ns) = 1.048 ns; Loc. = LCCOMB_X1_Y18_N10; Fanout = 2; COMB Node = 'count16bits:inst2|cnt[5]~27'
+        Info: 8: + IC(0.000 ns) + CELL(0.071 ns) = 1.119 ns; Loc. = LCCOMB_X1_Y18_N12; Fanout = 2; COMB Node = 'count16bits:inst2|cnt[6]~29'
+        Info: 9: + IC(0.000 ns) + CELL(0.159 ns) = 1.278 ns; Loc. = LCCOMB_X1_Y18_N14; Fanout = 2; COMB Node = 'count16bits:inst2|cnt[7]~31'
+        Info: 10: + IC(0.000 ns) + CELL(0.071 ns) = 1.349 ns; Loc. = LCCOMB_X1_Y18_N16; Fanout = 2; COMB Node = 'count16bits:inst2|cnt[8]~33'
+        Info: 11: + IC(0.000 ns) + CELL(0.071 ns) = 1.420 ns; Loc. = LCCOMB_X1_Y18_N18; Fanout = 2; COMB Node = 'count16bits:inst2|cnt[9]~35'
+        Info: 12: + IC(0.000 ns) + CELL(0.071 ns) = 1.491 ns; Loc. = LCCOMB_X1_Y18_N20; Fanout = 2; COMB Node = 'count16bits:inst2|cnt[10]~37'
+        Info: 13: + IC(0.000 ns) + CELL(0.071 ns) = 1.562 ns; Loc. = LCCOMB_X1_Y18_N22; Fanout = 2; COMB Node = 'count16bits:inst2|cnt[11]~39'
+        Info: 14: + IC(0.000 ns) + CELL(0.071 ns) = 1.633 ns; Loc. = LCCOMB_X1_Y18_N24; Fanout = 2; COMB Node = 'count16bits:inst2|cnt[12]~41'
+        Info: 15: + IC(0.000 ns) + CELL(0.071 ns) = 1.704 ns; Loc. = LCCOMB_X1_Y18_N26; Fanout = 2; COMB Node = 'count16bits:inst2|cnt[13]~43'
+        Info: 16: + IC(0.000 ns) + CELL(0.071 ns) = 1.775 ns; Loc. = LCCOMB_X1_Y18_N28; Fanout = 1; COMB Node = 'count16bits:inst2|cnt[14]~45'
+        Info: 17: + IC(0.000 ns) + CELL(0.410 ns) = 2.185 ns; Loc. = LCCOMB_X1_Y18_N30; Fanout = 1; COMB Node = 'count16bits:inst2|cnt[15]~46'
+        Info: 18: + IC(0.000 ns) + CELL(0.084 ns) = 2.269 ns; Loc. = LCFF_X1_Y18_N31; Fanout = 2; REG Node = 'count16bits:inst2|cnt[15]'
+        Info: Total cell delay = 1.969 ns ( 86.78 % )
+        Info: Total interconnect delay = 0.300 ns ( 13.22 % )
+    Info: - Smallest clock skew is -0.804 ns
+        Info: + Shortest clock path from clock "OSC_50" to destination register is 1.873 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_N2; Fanout = 2; CLK Node = 'OSC_50'
+            Info: 2: + IC(0.337 ns) + CELL(0.537 ns) = 1.873 ns; Loc. = LCFF_X1_Y18_N31; Fanout = 2; REG Node = 'count16bits:inst2|cnt[15]'
+            Info: Total cell delay = 1.536 ns ( 82.01 % )
+            Info: Total interconnect delay = 0.337 ns ( 17.99 % )
+        Info: - Longest clock path from clock "OSC_50" to source register is 2.677 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_N2; Fanout = 2; CLK Node = 'OSC_50'
+            Info: 2: + IC(0.118 ns) + CELL(0.000 ns) = 1.117 ns; Loc. = CLKCTRL_G2; Fanout = 15; COMB Node = 'OSC_50~clkctrl'
+            Info: 3: + IC(1.023 ns) + CELL(0.537 ns) = 2.677 ns; Loc. = LCFF_X1_Y18_N1; Fanout = 2; REG Node = 'count16bits:inst2|cnt[0]'
+            Info: Total cell delay = 1.536 ns ( 57.38 % )
+            Info: Total interconnect delay = 1.141 ns ( 42.62 % )
+    Info: + Micro clock to output delay of source is 0.250 ns
+    Info: + Micro setup delay of destination is -0.036 ns
+Info: tsu for register "count16bits:inst2|cnt[15]" (data pin = "key[0]", clock pin = "OSC_50") is 6.394 ns
+    Info: + Longest pin to register delay is 8.303 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.862 ns) = 0.862 ns; Loc. = PIN_G26; Fanout = 26; PIN Node = 'key[0]'
+        Info: 2: + IC(6.931 ns) + CELL(0.510 ns) = 8.303 ns; Loc. = LCFF_X1_Y18_N31; Fanout = 2; REG Node = 'count16bits:inst2|cnt[15]'
+        Info: Total cell delay = 1.372 ns ( 16.52 % )
+        Info: Total interconnect delay = 6.931 ns ( 83.48 % )
+    Info: + Micro setup delay of destination is -0.036 ns
+    Info: - Shortest clock path from clock "OSC_50" to destination register is 1.873 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_N2; Fanout = 2; CLK Node = 'OSC_50'
+        Info: 2: + IC(0.337 ns) + CELL(0.537 ns) = 1.873 ns; Loc. = LCFF_X1_Y18_N31; Fanout = 2; REG Node = 'count16bits:inst2|cnt[15]'
+        Info: Total cell delay = 1.536 ns ( 82.01 % )
+        Info: Total interconnect delay = 0.337 ns ( 17.99 % )
+Info: tco from clock "OSC_50" to destination pin "HEX0[0]" through register "entry:inst|hex0q[0]" is 10.813 ns
+    Info: + Longest clock path from clock "OSC_50" to source register is 4.339 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_N2; Fanout = 2; CLK Node = 'OSC_50'
+        Info: 2: + IC(0.337 ns) + CELL(0.787 ns) = 2.123 ns; Loc. = LCFF_X1_Y18_N31; Fanout = 2; REG Node = 'count16bits:inst2|cnt[15]'
+        Info: 3: + IC(0.641 ns) + CELL(0.000 ns) = 2.764 ns; Loc. = CLKCTRL_G0; Fanout = 13; COMB Node = 'CLK_LOCK:inst1|CLK_LOCK_altclkctrl_tb8:CLK_LOCK_altclkctrl_tb8_component|wire_clkctrl1_outclk'
+        Info: 4: + IC(1.038 ns) + CELL(0.537 ns) = 4.339 ns; Loc. = LCFF_X64_Y5_N23; Fanout = 5; REG Node = 'entry:inst|hex0q[0]'
+        Info: Total cell delay = 2.323 ns ( 53.54 % )
+        Info: Total interconnect delay = 2.016 ns ( 46.46 % )
+    Info: + Micro clock to output delay of source is 0.250 ns
+    Info: + Longest register to pin delay is 6.224 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X64_Y5_N23; Fanout = 5; REG Node = 'entry:inst|hex0q[0]'
+        Info: 2: + IC(3.426 ns) + CELL(2.798 ns) = 6.224 ns; Loc. = PIN_AF10; Fanout = 0; PIN Node = 'HEX0[0]'
+        Info: Total cell delay = 2.798 ns ( 44.96 % )
+        Info: Total interconnect delay = 3.426 ns ( 55.04 % )
+Info: th for register "entry:inst|hex0q[0]" (data pin = "key[0]", clock pin = "OSC_50") is -3.509 ns
+    Info: + Longest clock path from clock "OSC_50" to destination register is 4.339 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_N2; Fanout = 2; CLK Node = 'OSC_50'
+        Info: 2: + IC(0.337 ns) + CELL(0.787 ns) = 2.123 ns; Loc. = LCFF_X1_Y18_N31; Fanout = 2; REG Node = 'count16bits:inst2|cnt[15]'
+        Info: 3: + IC(0.641 ns) + CELL(0.000 ns) = 2.764 ns; Loc. = CLKCTRL_G0; Fanout = 13; COMB Node = 'CLK_LOCK:inst1|CLK_LOCK_altclkctrl_tb8:CLK_LOCK_altclkctrl_tb8_component|wire_clkctrl1_outclk'
+        Info: 4: + IC(1.038 ns) + CELL(0.537 ns) = 4.339 ns; Loc. = LCFF_X64_Y5_N23; Fanout = 5; REG Node = 'entry:inst|hex0q[0]'
+        Info: Total cell delay = 2.323 ns ( 53.54 % )
+        Info: Total interconnect delay = 2.016 ns ( 46.46 % )
+    Info: + Micro hold delay of destination is 0.266 ns
+    Info: - Shortest pin to register delay is 8.114 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.862 ns) = 0.862 ns; Loc. = PIN_G26; Fanout = 26; PIN Node = 'key[0]'
+        Info: 2: + IC(5.947 ns) + CELL(0.413 ns) = 7.222 ns; Loc. = LCCOMB_X64_Y5_N20; Fanout = 4; COMB Node = 'entry:inst|hex0q[0]~1'
+        Info: 3: + IC(0.232 ns) + CELL(0.660 ns) = 8.114 ns; Loc. = LCFF_X64_Y5_N23; Fanout = 5; REG Node = 'entry:inst|hex0q[0]'
+        Info: Total cell delay = 1.935 ns ( 23.85 % )
+        Info: Total interconnect delay = 6.179 ns ( 76.15 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 188 megabytes
+    Info: Processing ended: Mon Nov 16 19:23:53 2026
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+</PRE>
+<HR>
+
+<A HREF="#top">Top</A>
+
+</BODY>
+
+</HTML>
+

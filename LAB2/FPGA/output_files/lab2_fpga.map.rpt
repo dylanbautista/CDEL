@@ -1,6 +1,6 @@
 Analysis & Synthesis report for lab2_fpga
-Mon Nov 16 00:03:11 2026
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Mon Nov 16 19:23:48 2026
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
 ---------------------
@@ -13,26 +13,25 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis IP Cores Summary
-  9. State Machine - |lab2_fpga|entry:inst|part2:part2_i|errcnt
- 10. State Machine - |lab2_fpga|entry:inst|part2:part2_i|seqdet
- 11. State Machine - |lab2_fpga|entry:inst|part1:part1_i|curr_st
- 12. Registers Removed During Synthesis
- 13. Removed Registers Triggering Further Register Optimizations
- 14. General Register Statistics
- 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+  8. State Machine - |lab2_fpga|entry:inst|part2:part2_i|errcnt
+  9. State Machine - |lab2_fpga|entry:inst|part2:part2_i|seqdet
+ 10. State Machine - |lab2_fpga|entry:inst|part1:part1_i|curr_st
+ 11. Registers Removed During Synthesis
+ 12. Removed Registers Triggering Further Register Optimizations
+ 13. General Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Parameter Settings for User Entity Instance: entry:inst|opt1_counter:opt1_counter_i
  16. Port Connectivity Checks: "entry:inst|hex_disps:hex_dsps_i"
  17. Port Connectivity Checks: "entry:inst|part2:part2_i"
  18. Port Connectivity Checks: "entry:inst|part1:part1_i"
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
+ 19. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2013 Altera Corporation
+Copyright (C) 1991-2010 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -48,24 +47,24 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 16 00:03:11 2026           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; lab2_fpga                                       ;
-; Top-level Entity Name              ; lab2_fpga                                       ;
-; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 0                                               ;
-;     Total combinational functions  ; 0                                               ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 86                                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
-+------------------------------------+-------------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++------------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Nov 16 19:23:48 2026        ;
+; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name                      ; lab2_fpga                                    ;
+; Top-level Entity Name              ; lab2_fpga                                    ;
+; Family                             ; Cyclone II                                   ;
+; Total logic elements               ; 33                                           ;
+;     Total combinational functions  ; 28                                           ;
+;     Dedicated logic registers      ; 29                                           ;
+; Total registers                    ; 29                                           ;
+; Total pins                         ; 86                                           ;
+; Total virtual pins                 ; 0                                            ;
+; Total memory bits                  ; 0                                            ;
+; Embedded Multiplier 9-bit elements ; 0                                            ;
+; Total PLLs                         ; 0                                            ;
++------------------------------------+----------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -75,7 +74,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
 ; Top-level entity name                                                      ; lab2_fpga          ; lab2_fpga          ;
-; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Family name                                                                ; Cyclone II         ; Stratix II         ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                                ; Off                ; Off                ;
@@ -93,7 +92,6 @@ applicable agreement for further details.
 ; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
 ; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
 ; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
 ; Parallel Synthesis                                                         ; On                 ; On                 ;
 ; DSP Block Balancing                                                        ; Auto               ; Auto               ;
 ; NOT Gate Push-Back                                                         ; On                 ; On                 ;
@@ -115,7 +113,6 @@ applicable agreement for further details.
 ; Auto ROM Replacement                                                       ; On                 ; On                 ;
 ; Auto RAM Replacement                                                       ; On                 ; On                 ;
 ; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
 ; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
 ; Strict RAM Replacement                                                     ; Off                ; Off                ;
 ; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
@@ -128,16 +125,13 @@ applicable agreement for further details.
 ; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
 ; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
 ; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
-; Report Parameter Settings                                                  ; On                 ; On                 ;
-; Report Source Assignments                                                  ; On                 ; On                 ;
-; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On                 ; On                 ;
 ; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
 ; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
 ; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
 ; HDL message level                                                          ; Level2             ; Level2             ;
 ; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
 ; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
 ; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
 ; Clock MUX Protection                                                       ; On                 ; On                 ;
 ; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
@@ -145,11 +139,9 @@ applicable agreement for further details.
 ; SDC constraint protection                                                  ; Off                ; Off                ;
 ; Synthesis Effort                                                           ; Auto               ; Auto               ;
 ; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
 ; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
 ; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
 ; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
-; Synthesis Seed                                                             ; 1                  ; 1                  ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
@@ -159,70 +151,72 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 10     ;
+; Number detected on machine ; 20     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                 ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
-; ../files/count16bits.vhd         ; yes             ; User VHDL File                     ; /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/count16bits.vhd ;         ;
-; ../files/entry.vhd               ; yes             ; User VHDL File                     ; /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/entry.vhd       ;         ;
-; ../files/part2.vhd               ; yes             ; User VHDL File                     ; /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part2.vhd       ;         ;
-; ../files/part1.vhd               ; yes             ; User VHDL File                     ; /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd       ;         ;
-; ../files/hex_disps.vhd           ; yes             ; User VHDL File                     ; /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/hex_disps.vhd   ;         ;
-; ../files/count4b.vhd             ; yes             ; User VHDL File                     ; /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/count4b.vhd     ;         ;
-; ../files/clk_lock.v              ; yes             ; User Wizard-Generated File         ; /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/clk_lock.v      ;         ;
-; ../files/BCD7seg.vhd             ; yes             ; User VHDL File                     ; /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/BCD7seg.vhd     ;         ;
-; ../files/lab2_fpga.bdf           ; yes             ; User Block Diagram/Schematic File  ; /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/lab2_fpga.bdf   ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                    ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                    ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+
+; ../files/count16bits.vhd         ; yes             ; User VHDL File                     ; C:/Users/Usuari/Documents/MEE/1Q/CDEL/Lab2_git/CDEL/LAB2/files/count16bits.vhd  ;
+; ../files/entry.vhd               ; yes             ; User VHDL File                     ; C:/Users/Usuari/Documents/MEE/1Q/CDEL/Lab2_git/CDEL/LAB2/files/entry.vhd        ;
+; ../files/part2.vhd               ; yes             ; User VHDL File                     ; C:/Users/Usuari/Documents/MEE/1Q/CDEL/Lab2_git/CDEL/LAB2/files/part2.vhd        ;
+; ../files/part1.vhd               ; yes             ; User VHDL File                     ; C:/Users/Usuari/Documents/MEE/1Q/CDEL/Lab2_git/CDEL/LAB2/files/part1.vhd        ;
+; ../files/hex_disps.vhd           ; yes             ; User VHDL File                     ; C:/Users/Usuari/Documents/MEE/1Q/CDEL/Lab2_git/CDEL/LAB2/files/hex_disps.vhd    ;
+; ../files/count4b.vhd             ; yes             ; User VHDL File                     ; C:/Users/Usuari/Documents/MEE/1Q/CDEL/Lab2_git/CDEL/LAB2/files/count4b.vhd      ;
+; ../files/clk_lock.v              ; yes             ; User Wizard-Generated File         ; C:/Users/Usuari/Documents/MEE/1Q/CDEL/Lab2_git/CDEL/LAB2/files/clk_lock.v       ;
+; ../files/BCD7seg.vhd             ; yes             ; User VHDL File                     ; C:/Users/Usuari/Documents/MEE/1Q/CDEL/Lab2_git/CDEL/LAB2/files/BCD7seg.vhd      ;
+; ../files/lab2_fpga.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuari/Documents/MEE/1Q/CDEL/Lab2_git/CDEL/LAB2/files/lab2_fpga.bdf    ;
+; ../files/opt1_counter.vhd        ; yes             ; User VHDL File                     ; C:/Users/Usuari/Documents/MEE/1Q/CDEL/Lab2_git/CDEL/LAB2/files/opt1_counter.vhd ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 86    ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-+---------------------------------------------+-------+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+; Estimated Total logic elements              ; 33     ;
+;                                             ;        ;
+; Total combinational functions               ; 28     ;
+; Logic element usage by number of LUT inputs ;        ;
+;     -- 4 input functions                    ; 5      ;
+;     -- 3 input functions                    ; 4      ;
+;     -- <=2 input functions                  ; 19     ;
+;                                             ;        ;
+; Logic elements by mode                      ;        ;
+;     -- normal mode                          ; 13     ;
+;     -- arithmetic mode                      ; 15     ;
+;                                             ;        ;
+; Total registers                             ; 29     ;
+;     -- Dedicated logic registers            ; 29     ;
+;     -- I/O registers                        ; 0      ;
+;                                             ;        ;
+; I/O pins                                    ; 86     ;
+; Maximum fan-out node                        ; key[0] ;
+; Maximum fan-out                             ; 26     ;
+; Total fan-out                               ; 172    ;
+; Average fan-out                             ; 1.19   ;
++---------------------------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |lab2_fpga                 ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 86   ; 0            ; |lab2_fpga          ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                ;
++-------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                                        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                 ; Library Name ;
++-------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------+--------------+
+; |lab2_fpga                                                        ; 28 (0)            ; 29 (0)       ; 0           ; 0            ; 0       ; 0         ; 86   ; 0            ; |lab2_fpga                                                                          ; work         ;
+;    |CLK_LOCK:inst1|                                               ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2_fpga|CLK_LOCK:inst1                                                           ;              ;
+;       |CLK_LOCK_altclkctrl_tb8:CLK_LOCK_altclkctrl_tb8_component| ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2_fpga|CLK_LOCK:inst1|CLK_LOCK_altclkctrl_tb8:CLK_LOCK_altclkctrl_tb8_component ;              ;
+;    |count16bits:inst2|                                            ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2_fpga|count16bits:inst2                                                        ;              ;
+;    |entry:inst|                                                   ; 12 (2)            ; 13 (4)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2_fpga|entry:inst                                                               ;              ;
+;       |part1:part1_i|                                             ; 10 (6)            ; 9 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2_fpga|entry:inst|part1:part1_i                                                 ;              ;
+;          |count4b:counter|                                        ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab2_fpga|entry:inst|part1:part1_i|count4b:counter                                 ;              ;
++-------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                 ;
-+--------+----------------+---------+--------------+--------------+---------------------------+-------------------------------------------------------------------------+
-; Vendor ; IP Core Name   ; Version ; Release Date ; License Type ; Entity Instance           ; IP Include File                                                         ;
-+--------+----------------+---------+--------------+--------------+---------------------------+-------------------------------------------------------------------------+
-; Altera ; ALTCLKCTRL%CBX ; N/A     ; N/A          ; N/A          ; |lab2_fpga|CLK_LOCK:inst1 ; /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/clk_lock.v ;
-+--------+----------------+---------+--------------+--------------+---------------------------+-------------------------------------------------------------------------+
 
 
 Encoding Type:  One-Hot
@@ -276,45 +270,54 @@ Encoding Type:  One-Hot
 +----------------+----------------+---------------+--------------+--------------+--------------+--------------+----------------+---------------+
 
 
-+--------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                         ;
-+-----------------------------------------+--------------------------------------------------+
-; Register name                           ; Reason for Removal                               ;
-+-----------------------------------------+--------------------------------------------------+
-; entry:inst|part1:part1_i|sweep          ; Stuck at VCC due to stuck port data_in           ;
-; entry:inst|part1:part1_i|colq[0..3]     ; Stuck at GND due to stuck port data_in           ;
-; entry:inst|part1:part1_i|curr_st.kra1   ; Lost fanout                                      ;
-; entry:inst|part1:part1_i|curr_st.kra2   ; Lost fanout                                      ;
-; entry:inst|part1:part1_i|curr_st.kra3   ; Lost fanout                                      ;
-; entry:inst|part2:part2_i|seqdet.seqok   ; Stuck at GND due to stuck port data_in           ;
-; entry:inst|part2:part2_i|errcnt.err1    ; Lost fanout                                      ;
-; entry:inst|part2:part2_i|seqdet.waiting ; Lost fanout                                      ;
-; entry:inst|part2:part2_i|seqdet.now1ok  ; Lost fanout                                      ;
-; entry:inst|part2:part2_i|seqdet.now1ko  ; Lost fanout                                      ;
-; entry:inst|part2:part2_i|seqdet.now2ok  ; Lost fanout                                      ;
-; entry:inst|part2:part2_i|seqdet.now2ko  ; Lost fanout                                      ;
-; entry:inst|part2:part2_i|seqdet.now3ok  ; Lost fanout                                      ;
-; entry:inst|part2:part2_i|seqdet.now3ko  ; Lost fanout                                      ;
-; entry:inst|part2:part2_i|seqdet.now4ok  ; Lost fanout                                      ;
-; entry:inst|part2:part2_i|seqdet.now4ko  ; Lost fanout                                      ;
-; entry:inst|part2:part2_i|seqdet.seqko   ; Lost fanout                                      ;
-; entry:inst|part2:part2_i|errcnt.err2    ; Merged with entry:inst|part2:part2_i|errcnt.err0 ;
-; entry:inst|part2:part2_i|errcnt.err3    ; Merged with entry:inst|part2:part2_i|errcnt.err0 ;
-; entry:inst|part2:part2_i|good           ; Stuck at GND due to stuck port data_in           ;
-; entry:inst|part2:part2_i|errcnt.err0    ; Stuck at GND due to stuck port data_in           ;
-; entry:inst|part2:part2_i|seqdet.start   ; Stuck at GND due to stuck port data_in           ;
-; Total Number of Removed Registers = 25  ;                                                  ;
-+-----------------------------------------+--------------------------------------------------+
++------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                 ;
++-------------------------------------------+----------------------------------------+
+; Register name                             ; Reason for Removal                     ;
++-------------------------------------------+----------------------------------------+
+; entry:inst|part1:part1_i|sweep            ; Stuck at VCC due to stuck port data_in ;
+; entry:inst|part1:part1_i|colq[0..3]       ; Stuck at GND due to stuck port data_in ;
+; entry:inst|hex0q[1..3]                    ; Stuck at GND due to stuck port data_in ;
+; entry:inst|hex1q[1..3]                    ; Stuck at GND due to stuck port data_in ;
+; entry:inst|hex2q[1..3]                    ; Stuck at GND due to stuck port data_in ;
+; entry:inst|hex3q[1..3]                    ; Stuck at GND due to stuck port data_in ;
+; entry:inst|part2:part2_i|good             ; Stuck at GND due to stuck port data_in ;
+; entry:inst|part1:part1_i|curr_st.kra1     ; Lost fanout                            ;
+; entry:inst|part1:part1_i|curr_st.kra2     ; Lost fanout                            ;
+; entry:inst|part1:part1_i|curr_st.kra3     ; Lost fanout                            ;
+; entry:inst|part2:part2_i|seqdet.seqok     ; Lost fanout                            ;
+; entry:inst|part2:part2_i|errcnt.err1      ; Lost fanout                            ;
+; entry:inst|part2:part2_i|seqdet.waiting   ; Lost fanout                            ;
+; entry:inst|part2:part2_i|seqdet.start     ; Lost fanout                            ;
+; entry:inst|part2:part2_i|seqdet.now1ok    ; Lost fanout                            ;
+; entry:inst|part2:part2_i|seqdet.now1ko    ; Lost fanout                            ;
+; entry:inst|part2:part2_i|seqdet.now2ok    ; Lost fanout                            ;
+; entry:inst|part2:part2_i|seqdet.now2ko    ; Lost fanout                            ;
+; entry:inst|part2:part2_i|seqdet.now3ok    ; Lost fanout                            ;
+; entry:inst|part2:part2_i|seqdet.now3ko    ; Lost fanout                            ;
+; entry:inst|part2:part2_i|seqdet.now4ok    ; Lost fanout                            ;
+; entry:inst|part2:part2_i|seqdet.now4ko    ; Lost fanout                            ;
+; entry:inst|part2:part2_i|errcnt.err0      ; Stuck at GND due to stuck port data_in ;
+; entry:inst|part2:part2_i|seqdet.seqko     ; Stuck at GND due to stuck port data_in ;
+; entry:inst|part2:part2_i|errcnt.err2      ; Stuck at GND due to stuck port data_in ;
+; entry:inst|part2:part2_i|errcnt.err3      ; Stuck at GND due to stuck port data_in ;
+; entry:inst|blink                          ; Stuck at GND due to stuck port sclear  ;
+; entry:inst|opt1_counter:opt1_counter_i|ce ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 39    ;                                        ;
++-------------------------------------------+----------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                         ;
-+---------------------------------------+---------------------------+---------------------------------------------------------------------------------+
-; Register name                         ; Reason for Removal        ; Registers Removed due to This Register                                          ;
-+---------------------------------------+---------------------------+---------------------------------------------------------------------------------+
-; entry:inst|part2:part2_i|seqdet.seqok ; Stuck at GND              ; entry:inst|part2:part2_i|seqdet.now3ok, entry:inst|part2:part2_i|seqdet.now4ok, ;
-;                                       ; due to stuck port data_in ; entry:inst|part2:part2_i|seqdet.seqko, entry:inst|part2:part2_i|good            ;
-+---------------------------------------+---------------------------+---------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                             ;
++---------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; Register name                         ; Reason for Removal        ; Registers Removed due to This Register                                              ;
++---------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; entry:inst|part1:part1_i|colq[3]      ; Stuck at GND              ; entry:inst|hex0q[3], entry:inst|hex0q[1], entry:inst|hex1q[3], entry:inst|hex1q[2], ;
+;                                       ; due to stuck port data_in ; entry:inst|hex1q[1], entry:inst|hex2q[3], entry:inst|hex2q[2], entry:inst|hex2q[1], ;
+;                                       ;                           ; entry:inst|hex3q[3], entry:inst|hex3q[2], entry:inst|hex3q[1]                       ;
+; entry:inst|part2:part2_i|seqdet.seqko ; Stuck at GND              ; entry:inst|blink                                                                    ;
+;                                       ; due to stuck port data_in ;                                                                                     ;
++---------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -322,23 +325,35 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 29    ;
+; Number of registers using Synchronous Clear  ; 16    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 9     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 4     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
-; 12:1               ; 4 bits    ; 32 LEs        ; 12 LEs               ; 20 LEs                 ; No         ; |lab2_fpga|entry:inst|part2:part2_i|Selector11 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; 4:1                ; 18 bits   ; 36 LEs        ; 18 LEs               ; 18 LEs                 ; Yes        ; |lab2_fpga|entry:inst|opt1_counter:opt1_counter_i|cnt[15] ;
+; 12:1               ; 4 bits    ; 32 LEs        ; 12 LEs               ; 20 LEs                 ; No         ; |lab2_fpga|entry:inst|part2:part2_i|Selector10            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: entry:inst|opt1_counter:opt1_counter_i ;
++----------------+--------+-----------------------------------------------------------+
+; Parameter Name ; Value  ; Type                                                      ;
++----------------+--------+-----------------------------------------------------------+
+; min_count      ; 0      ; Signed Integer                                            ;
+; max_count      ; 195999 ; Signed Integer                                            ;
++----------------+--------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-------------------------------------------------------------+
@@ -346,10 +361,6 @@ Encoding Type:  One-Hot
 +------+-------+----------+-----------------------------------+
 ; Port ; Type  ; Severity ; Details                           ;
 +------+-------+----------+-----------------------------------+
-; num0 ; Input ; Info     ; Stuck at GND                      ;
-; num1 ; Input ; Info     ; Stuck at GND                      ;
-; num2 ; Input ; Info     ; Stuck at GND                      ;
-; num3 ; Input ; Info     ; Stuck at GND                      ;
 ; num4 ; Input ; Info     ; Stuck at GND                      ;
 ; num5 ; Input ; Info     ; Stuck at GND                      ;
 ; num6 ; Input ; Info     ; Stuck at GND                      ;
@@ -376,115 +387,93 @@ Encoding Type:  One-Hot
 
 
 +-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:04     ;
-+----------------+--------------+
-
-
-+-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Nov 16 00:02:50 2026
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Mon Nov 16 19:23:47 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab2_fpga -c lab2_fpga
-Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/count16bits.vhd
-    Info (12022): Found design unit 1: count16bits-arch2
-    Info (12023): Found entity 1: count16bits
-Info (12021): Found 2 design units, including 1 entities, in source file /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/entry.vhd
-    Info (12022): Found design unit 1: entry-arch
-    Info (12023): Found entity 1: entry
-Info (12021): Found 2 design units, including 1 entities, in source file /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench2.vhd
-    Info (12022): Found design unit 1: testbench2-arch
-    Info (12023): Found entity 1: testbench2
-Info (12021): Found 2 design units, including 1 entities, in source file /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/testbench.vhd
-    Info (12022): Found design unit 1: testbench-arch
-    Info (12023): Found entity 1: testbench
-Info (12021): Found 2 design units, including 1 entities, in source file /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/sw_det.vhd
-    Info (12022): Found design unit 1: sw_det-arch
-    Info (12023): Found entity 1: sw_det
-Info (12021): Found 2 design units, including 1 entities, in source file /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part2.vhd
-    Info (12022): Found design unit 1: part2-arc_part2
-    Info (12023): Found entity 1: part2
-Info (12021): Found 2 design units, including 1 entities, in source file /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/part1.vhd
-    Info (12022): Found design unit 1: part1-arc_keypad
-    Info (12023): Found entity 1: part1
-Info (12021): Found 0 design units, including 0 entities, in source file /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/mult2.vhd
-Info (12021): Found 2 design units, including 1 entities, in source file /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/mult.vhd
-    Info (12022): Found design unit 1: xx1-arch
-    Info (12023): Found entity 1: xx1
-Info (12021): Found 2 design units, including 1 entities, in source file /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/mealy.vhd
-    Info (12022): Found design unit 1: mealy-arch
-    Info (12023): Found entity 1: mealy
-Info (12021): Found 2 design units, including 1 entities, in source file /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/LCD_int.vhd
-    Info (12022): Found design unit 1: LCD_int-behaviour
-    Info (12023): Found entity 1: LCD_int
-Info (12021): Found 1 design units, including 1 entities, in source file /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/homework1.bdf
-    Info (12023): Found entity 1: homework1
-Info (12021): Found 2 design units, including 1 entities, in source file /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/hex_disps.vhd
-    Info (12022): Found design unit 1: hex_disps-behav_display
-    Info (12023): Found entity 1: hex_disps
-Info (12021): Found 2 design units, including 1 entities, in source file /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/count4b.vhd
-    Info (12022): Found design unit 1: count4b-arc_count4b
-    Info (12023): Found entity 1: count4b
-Info (12021): Found 2 design units, including 1 entities, in source file /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/comp.vhd
-    Info (12022): Found design unit 1: comp-arch
-    Info (12023): Found entity 1: comp
-Info (12021): Found 2 design units, including 2 entities, in source file /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/clk_lock.v
-    Info (12023): Found entity 1: CLK_LOCK_altclkctrl_tb8
-    Info (12023): Found entity 2: CLK_LOCK
-Info (12021): Found 2 design units, including 1 entities, in source file /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/BCD7seg.vhd
-    Info (12022): Found design unit 1: BCD7seg-behaviour
-    Info (12023): Found entity 1: BCD7seg
-Info (12021): Found 1 design units, including 1 entities, in source file /Users/dylanbautista/Documents/Uni/Master/Q1/CDEL/LAB2/files/lab2_fpga.bdf
-    Info (12023): Found entity 1: lab2_fpga
-Info (12127): Elaborating entity "lab2_fpga" for the top level hierarchy
-Info (12128): Elaborating entity "entry" for hierarchy "entry:inst"
-Warning (10541): VHDL Signal Declaration warning at entry.vhd(34): used implicit default value for signal "col" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10036): Verilog HDL or VHDL warning at entry.vhd(34): object "row" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at entry.vhd(40): object "shift" assigned a value but never read
-Info (12128): Elaborating entity "part1" for hierarchy "entry:inst|part1:part1_i"
-Info (12128): Elaborating entity "count4b" for hierarchy "entry:inst|part1:part1_i|count4b:counter"
-Info (12128): Elaborating entity "part2" for hierarchy "entry:inst|part2:part2_i"
-Info (12128): Elaborating entity "hex_disps" for hierarchy "entry:inst|hex_disps:hex_dsps_i"
-Info (12128): Elaborating entity "BCD7seg" for hierarchy "entry:inst|hex_disps:hex_dsps_i|BCD7seg:display0"
-Info (12128): Elaborating entity "CLK_LOCK" for hierarchy "CLK_LOCK:inst1"
-Info (12128): Elaborating entity "CLK_LOCK_altclkctrl_tb8" for hierarchy "CLK_LOCK:inst1|CLK_LOCK_altclkctrl_tb8:CLK_LOCK_altclkctrl_tb8_component"
-Info (12128): Elaborating entity "count16bits" for hierarchy "count16bits:inst2"
-Warning (13024): Output pins are stuck at VCC or GND
+Info: Found 2 design units, including 1 entities, in source file /users/usuari/documents/mee/1q/cdel/lab2_git/cdel/lab2/files/count16bits.vhd
+    Info: Found design unit 1: count16bits-arch2
+    Info: Found entity 1: count16bits
+Info: Found 2 design units, including 1 entities, in source file /users/usuari/documents/mee/1q/cdel/lab2_git/cdel/lab2/files/entry.vhd
+    Info: Found design unit 1: entry-arch
+    Info: Found entity 1: entry
+Info: Found 2 design units, including 1 entities, in source file /users/usuari/documents/mee/1q/cdel/lab2_git/cdel/lab2/files/testbench2.vhd
+    Info: Found design unit 1: testbench2-arch
+    Info: Found entity 1: testbench2
+Info: Found 2 design units, including 1 entities, in source file /users/usuari/documents/mee/1q/cdel/lab2_git/cdel/lab2/files/testbench.vhd
+    Info: Found design unit 1: testbench-arch
+    Info: Found entity 1: testbench
+Info: Found 2 design units, including 1 entities, in source file /users/usuari/documents/mee/1q/cdel/lab2_git/cdel/lab2/files/sw_det.vhd
+    Info: Found design unit 1: sw_det-arch
+    Info: Found entity 1: sw_det
+Info: Found 2 design units, including 1 entities, in source file /users/usuari/documents/mee/1q/cdel/lab2_git/cdel/lab2/files/part2.vhd
+    Info: Found design unit 1: part2-arc_part2
+    Info: Found entity 1: part2
+Info: Found 2 design units, including 1 entities, in source file /users/usuari/documents/mee/1q/cdel/lab2_git/cdel/lab2/files/part1.vhd
+    Info: Found design unit 1: part1-arc_keypad
+    Info: Found entity 1: part1
+Info: Found 0 design units, including 0 entities, in source file /users/usuari/documents/mee/1q/cdel/lab2_git/cdel/lab2/files/mult2.vhd
+Info: Found 2 design units, including 1 entities, in source file /users/usuari/documents/mee/1q/cdel/lab2_git/cdel/lab2/files/mult.vhd
+    Info: Found design unit 1: xx1-arch
+    Info: Found entity 1: xx1
+Info: Found 2 design units, including 1 entities, in source file /users/usuari/documents/mee/1q/cdel/lab2_git/cdel/lab2/files/mealy.vhd
+    Info: Found design unit 1: mealy-arch
+    Info: Found entity 1: mealy
+Info: Found 2 design units, including 1 entities, in source file /users/usuari/documents/mee/1q/cdel/lab2_git/cdel/lab2/files/lcd_int.vhd
+    Info: Found design unit 1: LCD_int-behaviour
+    Info: Found entity 1: LCD_int
+Info: Found 1 design units, including 1 entities, in source file /users/usuari/documents/mee/1q/cdel/lab2_git/cdel/lab2/files/homework1.bdf
+    Info: Found entity 1: homework1
+Info: Found 2 design units, including 1 entities, in source file /users/usuari/documents/mee/1q/cdel/lab2_git/cdel/lab2/files/hex_disps.vhd
+    Info: Found design unit 1: hex_disps-behav_display
+    Info: Found entity 1: hex_disps
+Info: Found 2 design units, including 1 entities, in source file /users/usuari/documents/mee/1q/cdel/lab2_git/cdel/lab2/files/count4b.vhd
+    Info: Found design unit 1: count4b-arc_count4b
+    Info: Found entity 1: count4b
+Info: Found 2 design units, including 1 entities, in source file /users/usuari/documents/mee/1q/cdel/lab2_git/cdel/lab2/files/comp.vhd
+    Info: Found design unit 1: comp-arch
+    Info: Found entity 1: comp
+Info: Found 2 design units, including 2 entities, in source file /users/usuari/documents/mee/1q/cdel/lab2_git/cdel/lab2/files/clk_lock.v
+    Info: Found entity 1: CLK_LOCK_altclkctrl_tb8
+    Info: Found entity 2: CLK_LOCK
+Info: Found 2 design units, including 1 entities, in source file /users/usuari/documents/mee/1q/cdel/lab2_git/cdel/lab2/files/bcd7seg.vhd
+    Info: Found design unit 1: BCD7seg-behaviour
+    Info: Found entity 1: BCD7seg
+Info: Found 1 design units, including 1 entities, in source file /users/usuari/documents/mee/1q/cdel/lab2_git/cdel/lab2/files/lab2_fpga.bdf
+    Info: Found entity 1: lab2_fpga
+Info: Found 2 design units, including 1 entities, in source file /users/usuari/documents/mee/1q/cdel/lab2_git/cdel/lab2/files/opt1_counter.vhd
+    Info: Found design unit 1: opt1_counter-rtl
+    Info: Found entity 1: opt1_counter
+Info: Elaborating entity "lab2_fpga" for the top level hierarchy
+Info: Elaborating entity "entry" for hierarchy "entry:inst"
+Warning (10541): VHDL Signal Declaration warning at entry.vhd(50): used implicit default value for signal "col" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at entry.vhd(50): object "row" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at entry.vhd(59): object "shift" assigned a value but never read
+Info: Elaborating entity "part1" for hierarchy "entry:inst|part1:part1_i"
+Info: Elaborating entity "count4b" for hierarchy "entry:inst|part1:part1_i|count4b:counter"
+Info: Elaborating entity "part2" for hierarchy "entry:inst|part2:part2_i"
+Info: Elaborating entity "opt1_counter" for hierarchy "entry:inst|opt1_counter:opt1_counter_i"
+Info: Elaborating entity "hex_disps" for hierarchy "entry:inst|hex_disps:hex_dsps_i"
+Info: Elaborating entity "BCD7seg" for hierarchy "entry:inst|hex_disps:hex_dsps_i|BCD7seg:display0"
+Info: Elaborating entity "CLK_LOCK" for hierarchy "CLK_LOCK:inst1"
+Info: Elaborating entity "CLK_LOCK_altclkctrl_tb8" for hierarchy "CLK_LOCK:inst1|CLK_LOCK_altclkctrl_tb8:CLK_LOCK_altclkctrl_tb8_component"
+Info: Elaborating entity "count16bits" for hierarchy "count16bits:inst2"
+Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX0[6]" is stuck at VCC
-    Warning (13410): Pin "HEX0[5]" is stuck at GND
-    Warning (13410): Pin "HEX0[4]" is stuck at GND
-    Warning (13410): Pin "HEX0[3]" is stuck at GND
     Warning (13410): Pin "HEX0[2]" is stuck at GND
     Warning (13410): Pin "HEX0[1]" is stuck at GND
-    Warning (13410): Pin "HEX0[0]" is stuck at GND
     Warning (13410): Pin "HEX1[6]" is stuck at VCC
-    Warning (13410): Pin "HEX1[5]" is stuck at GND
-    Warning (13410): Pin "HEX1[4]" is stuck at GND
-    Warning (13410): Pin "HEX1[3]" is stuck at GND
     Warning (13410): Pin "HEX1[2]" is stuck at GND
     Warning (13410): Pin "HEX1[1]" is stuck at GND
-    Warning (13410): Pin "HEX1[0]" is stuck at GND
     Warning (13410): Pin "HEX2[6]" is stuck at VCC
-    Warning (13410): Pin "HEX2[5]" is stuck at GND
-    Warning (13410): Pin "HEX2[4]" is stuck at GND
-    Warning (13410): Pin "HEX2[3]" is stuck at GND
     Warning (13410): Pin "HEX2[2]" is stuck at GND
     Warning (13410): Pin "HEX2[1]" is stuck at GND
-    Warning (13410): Pin "HEX2[0]" is stuck at GND
     Warning (13410): Pin "HEX3[6]" is stuck at VCC
-    Warning (13410): Pin "HEX3[5]" is stuck at GND
-    Warning (13410): Pin "HEX3[4]" is stuck at GND
-    Warning (13410): Pin "HEX3[3]" is stuck at GND
     Warning (13410): Pin "HEX3[2]" is stuck at GND
     Warning (13410): Pin "HEX3[1]" is stuck at GND
-    Warning (13410): Pin "HEX3[0]" is stuck at GND
     Warning (13410): Pin "HEX4[6]" is stuck at VCC
     Warning (13410): Pin "HEX4[5]" is stuck at GND
     Warning (13410): Pin "HEX4[4]" is stuck at GND
@@ -540,20 +529,32 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LED_RED[2]" is stuck at GND
     Warning (13410): Pin "LED_RED[1]" is stuck at GND
     Warning (13410): Pin "LED_RED[0]" is stuck at GND
-Info (17049): 14 registers lost all their fanouts during netlist optimizations.
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 3 input pin(s) that do not drive logic
+Info: 15 registers lost all their fanouts during netlist optimizations. The first 15 are displayed below.
+    Info: Register "entry:inst|part1:part1_i|curr_st.kra1" lost all its fanouts during netlist optimizations.
+    Info: Register "entry:inst|part1:part1_i|curr_st.kra2" lost all its fanouts during netlist optimizations.
+    Info: Register "entry:inst|part1:part1_i|curr_st.kra3" lost all its fanouts during netlist optimizations.
+    Info: Register "entry:inst|part2:part2_i|seqdet.seqok" lost all its fanouts during netlist optimizations.
+    Info: Register "entry:inst|part2:part2_i|errcnt.err1" lost all its fanouts during netlist optimizations.
+    Info: Register "entry:inst|part2:part2_i|seqdet.waiting" lost all its fanouts during netlist optimizations.
+    Info: Register "entry:inst|part2:part2_i|seqdet.start" lost all its fanouts during netlist optimizations.
+    Info: Register "entry:inst|part2:part2_i|seqdet.now1ok" lost all its fanouts during netlist optimizations.
+    Info: Register "entry:inst|part2:part2_i|seqdet.now1ko" lost all its fanouts during netlist optimizations.
+    Info: Register "entry:inst|part2:part2_i|seqdet.now2ok" lost all its fanouts during netlist optimizations.
+    Info: Register "entry:inst|part2:part2_i|seqdet.now2ko" lost all its fanouts during netlist optimizations.
+    Info: Register "entry:inst|part2:part2_i|seqdet.now3ok" lost all its fanouts during netlist optimizations.
+    Info: Register "entry:inst|part2:part2_i|seqdet.now3ko" lost all its fanouts during netlist optimizations.
+    Info: Register "entry:inst|part2:part2_i|seqdet.now4ok" lost all its fanouts during netlist optimizations.
+    Info: Register "entry:inst|part2:part2_i|seqdet.now4ko" lost all its fanouts during netlist optimizations.
+Warning: Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "key[1]"
-    Warning (15610): No output dependent on input pin "key[0]"
-    Warning (15610): No output dependent on input pin "OSC_50"
-Info (21057): Implemented 86 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 83 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 92 warnings
-    Info: Peak virtual memory: 630 megabytes
-    Info: Processing ended: Mon Nov 16 00:03:11 2026
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:18
+Info: Implemented 120 device resources after synthesis - the final resource count might be different
+    Info: Implemented 3 input pins
+    Info: Implemented 83 output pins
+    Info: Implemented 33 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 73 warnings
+    Info: Peak virtual memory: 248 megabytes
+    Info: Processing ended: Mon Nov 16 19:23:48 2026
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

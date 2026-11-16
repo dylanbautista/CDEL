@@ -5,7 +5,7 @@ use ieee.std_logic_1164.all;
 entity part2 is
   port ( clk, nrst, key          : in  std_logic;
          keycode                 : in  std_logic_vector(3 downto 0);
-         good, bad1, bad2, bad3  : out std_logic;
+         good, bad1, bad2, bad3, lock  : out std_logic;
          shift                   : out std_logic );
 end part2;
 
@@ -85,6 +85,8 @@ code_sel : with seqdet select
 
 bcd_ok  <= '1' when bcdind = '1' and code = keycode  else '0';
 bcd_ko  <= '1' when bcdind = '1' and code /= keycode  else '0';
+
+lock <= '1' when seqdet = seqko else '0';
 
 detecok <= '1' when seqdet = now4ok and almind = '1' else '0';
 detecko <= '1' when seqdet = now4ko and almind = '1' else '0';
