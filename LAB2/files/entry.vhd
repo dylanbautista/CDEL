@@ -22,7 +22,8 @@ architecture arch of entry is
     component part2
         port ( clk, nrst, key          : in  std_logic;
             keycode                 : in  std_logic_vector(3 downto 0);
-            good, bad1, bad2, bad3, lock  : out std_logic;
+            good, bad1, bad2, bad3, lock, rev  : out std_logic;
+            num_reveal				: out std_logic_vector(15 downto 0);
             shift                   : out std_logic );
     end component;
 
@@ -55,6 +56,8 @@ architecture arch of entry is
     signal lock : std_logic;
     signal blink : std_logic;
     signal ce : std_logic;
+    signal rev : std_logic;
+    signal num_reveal 			 : std_logic_vector (15 downto 0);
     signal keycode : std_logic_vector(3 downto 0);
     signal good, bad1, bad2, bad3, shift : std_logic;
 
@@ -85,6 +88,8 @@ begin
         bad2 => bad2,
         bad3 => bad3,
         lock => lock,
+        rev => rev,
+        num_reveal => num_reveal,
         shift => shift
     );
     
@@ -128,11 +133,17 @@ begin
     begin
         if nrst = '0' then
         elsif rising_edge(clk) then
-            if key = '1' then
+            if key = '1' and rev = '0' then
                 hex0q <= keycode;
                 hex1q <= hex0q;
                 hex2q <= hex1q;
                 hex3q <= hex2q;
+             
+             elsif rev = '1' then
+				hex0q <= num_reveal(15 downto 12);
+                hex1q <= num_reveal(11 downto 8);
+                hex2q <= num_reveal(7 downto 4);
+                hex3q <= num_reveal(3 downto 0);
             end if;
         end if;
     end process;
