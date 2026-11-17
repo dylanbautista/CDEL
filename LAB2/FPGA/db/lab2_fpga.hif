@@ -397,26 +397,6 @@ a36c8ec425c8a2589af98b2d4daabc3
 
 # end
 # entity
-lab2_fpga
-# storage
-db|lab2_fpga.(0).cnf
-db|lab2_fpga.(0).cnf
-# case_insensitive
-# source_file
-|users|usuari|documents|mee|1q|cdel|lab2_git|cdel|lab2|files|lab2_fpga.bdf
-ee535aee6eb6b177e48c6116bb13c1a
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 part2
 # storage
 db|lab2_fpga.(1).cnf
@@ -450,10 +430,30 @@ a36c8ec425c8a2589af98b2d4daabc3
 
 # end
 # entity
-entry
+lab2_fpga
 # storage
 db|lab2_fpga.(4).cnf
 db|lab2_fpga.(4).cnf
+# case_insensitive
+# source_file
+|users|usuari|documents|mee|1q|cdel|lab2_git|cdel|lab2|files|lab2_fpga.bdf
+9b37c59b25355d2fa19f6941c9574ed4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+entry
+# storage
+db|lab2_fpga.(0).cnf
+db|lab2_fpga.(0).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -461,7 +461,7 @@ ON
 # case_insensitive
 # source_file
 |users|usuari|documents|mee|1q|cdel|lab2_git|cdel|lab2|files|entry.vhd
-20a7c998d57fdd65272b3f791ad932f
+f3c3607d47dd39363682241cee99
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT

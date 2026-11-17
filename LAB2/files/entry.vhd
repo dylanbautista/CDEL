@@ -3,9 +3,11 @@ library work;
 use ieee.std_logic_1164.all;
 
 entity entry is
-    port(clk, nrst, hint : in std_logic;
+    port(clk, nrst : in std_logic;
         HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7 : out std_logic_vector (6 downto 0);
         LED_GREEN : out std_logic_vector(8 downto 0);
+        row : out std_logic_vector(3 downto 0);
+        col          : in  std_logic_vector(3 downto 0);
         LED_RED : out std_logic_vector(17 downto 0)
     );
 end entry;
@@ -48,7 +50,7 @@ architecture arch of entry is
 	end component;
 
 
-    signal col, row : std_logic_vector(3 downto 0);
+   -- signal col, row : std_logic_vector(3 downto 0);
     signal pressed : integer; --range 0 to 16;
 
     --signal clk : std_logic := '0';
@@ -132,6 +134,10 @@ begin
     process(clk, nrst) -- could this process be sensitive to key, rather than clk?
     begin
         if nrst = '0' then
+			hex0q <= "0000";
+			hex1q <= "0000";
+			hex2q <= "0000";
+			hex3q <= "0000";
         elsif rising_edge(clk) then
             if key = '1' and rev = '0' then
                 hex0q <= keycode;
