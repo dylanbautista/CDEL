@@ -86,7 +86,7 @@ code_sel : with seqdet select
 bcd_ok  <= '1' when bcdind = '1' and code = keycode  else '0';
 bcd_ko  <= '1' when bcdind = '1' and code /= keycode  else '0';
 
-lock <= '1' when seqdet = seqko else '0';
+lock <= '1' when errcnt = err3 else '0';
 
 detecok <= '1' when seqdet = now4ok and almind = '1' else '0';
 detecko <= '1' when seqdet = now4ko and almind = '1' else '0';
