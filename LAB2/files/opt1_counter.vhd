@@ -6,7 +6,7 @@ entity opt1_counter is
 	generic
 	(
 		MIN_COUNT : natural := 0;
-		MAX_COUNT : natural := 195999
+		MAX_COUNT : natural := 762
 	);
 	port
 	(
@@ -21,22 +21,25 @@ architecture rtl of opt1_counter is
 	signal cnt : integer range MIN_COUNT to MAX_COUNT := MIN_COUNT;
 begin
 
-	process (clk)
+	process(clk)
 	begin
-		if (rising_edge(clk)) then
+		if rising_edge(clk) then
 			if nrst = '0' then
 				cnt <= MIN_COUNT;
 				ce  <= '0';
+
 			elsif lock = '1' then
 				if cnt = MAX_COUNT then
-					cnt <= MIN_COUNT; 
-					ce  <= '1';     
+					cnt <= MIN_COUNT;
+					ce  <= '1';
 				else
 					cnt <= cnt + 1;
 					ce  <= '0';
 				end if;
+
 			else
-				ce <= '0'; 
+				cnt <= MIN_COUNT;
+				ce  <= '0';
 			end if;
 		end if;
 	end process;
