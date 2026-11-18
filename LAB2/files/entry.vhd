@@ -6,6 +6,8 @@ entity entry is
     port(clk, nrst, hint : in std_logic;
         HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7 : out std_logic_vector (6 downto 0);
         LED_GREEN : out std_logic_vector(8 downto 0);
+        col : in std_logic_vector(3 downto 0);
+        row : out std_logic_vector(3 downto 0);
         LED_RED : out std_logic_vector(17 downto 0)
     );
 end entry;
@@ -31,7 +33,7 @@ architecture arch of entry is
          HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7 : out std_logic_vector (6 downto 0));
     end component;
 
-    signal col, row : std_logic_vector(3 downto 0);
+    --signal col, row : std_logic_vector(3 downto 0);
     signal pressed : integer; --range 0 to 16;
 
     --signal clk : std_logic := '0';
@@ -91,15 +93,19 @@ begin
     num1 <= hex1q;
     num2 <= hex2q;
     num3 <= hex3q;
-    num4 <= "0000";
-    num5 <= "0000";
-    num6 <= "0000";
-    num7 <= "0000";
+    num4 <= "1111";
+    num5 <= "1111";
+    num6 <= "1111";
+    num7 <= "1111";
 
     -- Display D-flip-flops to retain numbers introduced by user
     process(clk, nrst) -- could this process be sensitive to key, rather than clk?
     begin
         if nrst = '0' then
+            hex0q <= "1111";
+            hex1q <= "1111";
+            hex2q <= "1111";
+            hex3q <= "1111";
         elsif rising_edge(clk) then
             if key = '1' then
                 hex0q <= keycode;
