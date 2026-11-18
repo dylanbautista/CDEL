@@ -38,7 +38,7 @@ architecture arch of entry is
 		generic
 		(
 			MIN_COUNT : natural := 0;
-			MAX_COUNT : natural := 195999
+			MAX_COUNT : natural := 762
 		);
 		port
 		(
@@ -62,6 +62,7 @@ architecture arch of entry is
     signal num_reveal 			 : std_logic_vector (15 downto 0);
     signal keycode : std_logic_vector(3 downto 0);
     signal good, bad1, bad2, bad3, shift : std_logic;
+    signal prev_rev : std_logic := '0';
 
     signal num0, num1, num2, num3, num4, num5, num6, num7 : std_logic_vector (3 downto 0) := "0000";
     --signal HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7 : std_logic_vector (6 downto 0);
@@ -69,6 +70,7 @@ architecture arch of entry is
     signal bad1_led, bad2_led, bad3_led : std_logic_vector(5 downto 0);
 
     signal hex0q, hex1q, hex2q, hex3q : std_logic_vector(3 downto 0);
+    signal hex0qs, hex1qs, hex2qs, hex3qs : std_logic_vector(3 downto 0);
 begin
 
     part1_i: part1 port map(
@@ -98,7 +100,7 @@ begin
     opt1_counter_i: opt1_counter port map(
         clk => clk,
         nrst => nrst,
-        lock => lock,
+        lock => bad3,
         ce => ce
 	);
 	
@@ -125,31 +127,50 @@ begin
     num1 <= hex1q;
     num2 <= hex2q;
     num3 <= hex3q;
-    num4 <= "0000";
-    num5 <= "0000";
-    num6 <= "0000";
-    num7 <= "0000";
+    num4 <= "1111";
+    num5 <= "1111";
+    num6 <= "1111";
+    num7 <= "1111";
 
     -- Display D-flip-flops to retain numbers introduced by user
     process(clk, nrst) -- could this process be sensitive to key, rather than clk?
     begin
         if nrst = '0' then
-			hex0q <= "0000";
-			hex1q <= "0000";
-			hex2q <= "0000";
-			hex3q <= "0000";
+			hex0q <= "1111";
+			hex1q <= "1111";
+			hex2q <= "1111";
+			hex3q <= "1111";
         elsif rising_edge(clk) then
-            if key = '1' and rev = '0' then
-                hex0q <= keycode;
-                hex1q <= hex0q;
-                hex2q <= hex1q;
-                hex3q <= hex2q;
-             
-             elsif rev = '1' then
-				hex0q <= num_reveal(15 downto 12);
-                hex1q <= num_reveal(11 downto 8);
-                hex2q <= num_reveal(7 downto 4);
-                hex3q <= num_reveal(3 downto 0);
+            if key = '1' then
+                if rev = '0' and prev_rev = '1' then
+                    hex0q <= hex0qs;
+                    hex1q <= hex1qs;
+                    hex2q <= hex2qs;
+                    hex3q <= hex3qs;
+                    prev_rev <= '0';
+                elsif keycode /= x"a" and keycode /= x"b" and keycode /= x"c" and keycode /= x"d" and keycode /= x"e" and keycode /= x"f" then
+                    hex0q <= keycode;
+                    hex1q <= hex0q;
+                    hex2q <= hex1q;
+                    hex3q <= hex2q;
+                elsif keycode = x"e" then -- alm clicked
+                    hex0q <= "1111";
+                    hex1q <= "1111";
+                    hex2q <= "1111";
+                    hex3q <= "1111";
+                end if;
+             elsif rev = '1' and prev_rev = '0' then
+                prev_rev <= '1';
+                
+                hex0qs <= hex0q;
+                hex1qs <= hex1q;
+                hex2qs <= hex2q;
+                hex3qs <= hex3q;
+
+				hex3q <= num_reveal(15 downto 12);
+                hex2q <= num_reveal(11 downto 8);
+                hex1q <= num_reveal(7 downto 4);
+                hex0q <= num_reveal(3 downto 0);
             end if;
         end if;
     end process;
@@ -159,7 +180,7 @@ begin
 		if nrst = '0' then
 			blink <= '0';
 		elsif rising_edge(clk) then
-			if lock = '0' then
+			if bad3 = '0' then
 				blink <= '0';
 			elsif ce = '1' then
 				blink <= not blink; 
@@ -173,7 +194,7 @@ begin
     bad2_led <= "111111" when bad2 = '1' else "000000";
     bad3_led <= "111111" when bad3 = '1' else "000000";
     --LED_RED <= bad1_led & bad2_led & bad3_led;
-	LED_RED <= bad1_led & bad2_led & bad3_led when lock = '0' else
+	LED_RED <= bad1_led & bad2_led & bad3_led when bad3 = '0' else
            "111111111111111111" when blink = '1' else
            "000000000000000000";
 
