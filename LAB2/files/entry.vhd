@@ -6,6 +6,8 @@ entity entry is
     port(clk, nrst, hint : in std_logic;
         HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7 : out std_logic_vector (6 downto 0);
         LED_GREEN : out std_logic_vector(8 downto 0);
+        col : in std_logic_vector(3 downto 0);
+        row : out std_logic_vector(3 downto 0);
         LED_RED : out std_logic_vector(17 downto 0)
     );
 end entry;
@@ -35,7 +37,7 @@ architecture arch of entry is
 		generic
 		(
 			MIN_COUNT : natural := 0;
-			MAX_COUNT : natural := 195999
+			MAX_COUNT : natural := 762
 		);
 		port
 		(
@@ -47,13 +49,13 @@ architecture arch of entry is
 	end component;
 
 
-    signal col, row : std_logic_vector(3 downto 0);
+    --signal col, row : std_logic_vector(3 downto 0);
     signal pressed : integer; --range 0 to 16;
 
     --signal clk : std_logic := '0';
     signal key : std_logic := '0';
     signal lock : std_logic;
-    signal blink : std_logic;
+    signal blink : std_logic := '0';
     signal ce : std_logic;
     signal keycode : std_logic_vector(3 downto 0);
     signal good, bad1, bad2, bad3, shift : std_logic;
@@ -91,7 +93,7 @@ begin
     opt1_counter_i: opt1_counter port map(
         clk => clk,
         nrst => nrst,
-        lock => lock,
+        lock => bad3,
         ce => ce
 	);
 	
@@ -118,15 +120,19 @@ begin
     num1 <= hex1q;
     num2 <= hex2q;
     num3 <= hex3q;
-    num4 <= "0000";
-    num5 <= "0000";
-    num6 <= "0000";
-    num7 <= "0000";
+    num4 <= "1111";
+    num5 <= "1111";
+    num6 <= "1111";
+    num7 <= "1111";
 
     -- Display D-flip-flops to retain numbers introduced by user
     process(clk, nrst) -- could this process be sensitive to key, rather than clk?
     begin
         if nrst = '0' then
+            hex0q <= "1111";
+            hex1q <= "1111";
+            hex2q <= "1111";
+            hex3q <= "1111";
         elsif rising_edge(clk) then
             if key = '1' then
                 hex0q <= keycode;
@@ -137,18 +143,18 @@ begin
         end if;
     end process;
     
-	process(clk, nrst)
-	begin
-		if nrst = '0' then
-			blink <= '0';
-		elsif rising_edge(clk) then
-			if lock = '0' then
-				blink <= '0';
-			elsif ce = '1' then
-				blink <= not blink; 
-			end if;
-		end if;
-	end process;
+	process(clk)
+    begin
+        if rising_edge(clk) then
+            if nrst = '0' then
+                blink <= '0';
+            elsif bad3 = '0' then
+                blink <= '0';
+            elsif ce = '1' then
+                blink <= not blink;
+            end if;
+        end if;
+    end process;
 
     -- bad/good LED logic
     LED_GREEN <= "111111111" when good = '1' else "000000000";
@@ -156,7 +162,7 @@ begin
     bad2_led <= "111111" when bad2 = '1' else "000000";
     bad3_led <= "111111" when bad3 = '1' else "000000";
     --LED_RED <= bad1_led & bad2_led & bad3_led;
-	LED_RED <= bad1_led & bad2_led & bad3_led when lock = '0' else
+	LED_RED <= bad1_led & bad2_led & bad3_led when bad3 = '0' else
            "111111111111111111" when blink = '1' else
            "000000000000000000";
 
